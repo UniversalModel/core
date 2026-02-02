@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this theory, please cite it as below."
+title: "U-Model: Universal Theory of Everything"
+version: "23.0"
+date-released: 2026-01-30
+license: CC-BY-4.0
+repository: "https://osf.io/74xgr/"
+url: "https://u-model.org"
+doi: "10.17605/OSF.IO/74XGR"
+
+authors:
+  - family-names: Nikolov
+    given-names: Petar
+    email: petar@u-model.org
+    orcid: ""
+    affiliation: "U-Model Foundation"
+
+keywords:
+  - theory of everything
+  - universal model
+  - form-position-action
+  - dimensional stability
+  - systems theory
+  - unified theory
+  - falsifiable predictions
+
+abstract: |
+  U-Model is a universal theoretical framework that unifies physics, 
+  biology, sociology, and artificial intelligence through a single 
+  triadic structure: Form-Position-Action (F-P-A). The theory proposes 
+  that every stable system maintains dimensional balance expressed as 
+  F + P + A = const (Dimensional Stability Theorem). This framework 
+  generates 333+ falsifiable predictions across 45+ discovery programs, 
+  spanning from quantum mechanics to consciousness studies.
+
+references:
+  - type: article
+    title: "Dimensional Stability Theorem v23.2"
+    authors:
+      - family-names: Nikolov
+        given-names: Petar
+    year: 2026
+    url: "https://osf.io/74xgr/"
