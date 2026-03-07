@@ -20,15 +20,25 @@
 > **Canonical Integration:** This appendix is formalized as **Appendix POLEMOS** in `THEORY OF EVERYTHING_18.5.md`.  
 > The core definitions (POL.1–POL.10) are derived directly from the Entropy Lemma (Q.3) and the triadic resistance framework (Appendix RR).
 
+> **Canonical stability definition (v26.11):** In the wider theory, stability means **sufficiently prolonged existence at tolerable cost**, relative to a specified observer, task, or criterion. In war, this becomes brutally explicit: a system remains stable only insofar as its **Form** can endure through **Time**, its **Position** can be held in strategically relevant **Space-context**, and its **Action** can be sustained through acceptable **Energy/resource** expenditure without destroying the conditions of its own continued survival.
+
+> **Triadic necessity theorem (short canon, v26.12):** No realized stable system can exist without enduring as **Form** in **Time**, being distinguishable as **Position** in **Space-context**, and acting through **Energy**. War is analyzed here as the deliberate attack on one or more of these three necessary conditions.
+
+> **Core war reading (v26.14):** Peace is the compatible co-optimization of the three prices of existence. War begins when two systems can no longer co-stabilize their **Form**, **Position**, and **Action** under a shared order, and one system attempts to reduce its own cost of existence by exporting entropy into the other.
+
 ---
 
 ## ABSTRACT
 
 > *"War is not merely violence; it is entropy exchange between competing Forms."*
 
-This appendix mathematizes the ancient art of warfare through the lens of U-Theory. We demonstrate that all conflict—from subatomic particle annihilation to geopolitical warfare—follows the same thermodynamic principles: **Forms compete for stability by manipulating Position and investing Action to increase the entropy of adversarial systems.**
+This appendix mathematizes the ancient art of warfare through the lens of U-Theory. It argues that conflict—from local tactical confrontation to geopolitical warfare—can be read through the same thermodynamic logic: **systems compete for stability by manipulating Position and investing Action to increase the entropy of adversarial systems.**
 
-The fundamental insight: **War is the process by which System A invests Action (Energy) to forcibly increase the Entropy (S) of System B, with the goal of destroying its Form (Identity) or capturing its Position (Resources).**
+The fundamental insight: **War is the process by which System A invests Action (Energy) to forcibly increase the entropy of System B, with the goal of degrading its Form, destabilizing its Position, or redirecting the costs of existence away from itself and onto the other system.**
+
+Compressed core statement:
+
+> **War is the maximal export of entropy between systems whose coexistence has become structurally incompatible.**
 
 **Strategic Importance:** This appendix is the ultimate "stress test" for U-Theory. If U-Model can explain the chaos of war, it can explain everything. War is not an exception to universal laws—it is their **extreme state**.
 
@@ -174,11 +184,17 @@ $$\text{If } U_{economy}(Aggressor) < U_{economy}(Defender) \times \tau_{war} \i
 
 ### 1.1 Definition of Conflict
 
-**Conflict** arises when two distinct Forms ($F_1 \neq F_2$) cannot coexist in the same Position space without mutual entropy increase.
+**Conflict** arises when two distinct systems can no longer coexist in the same strategic order without mutual entropy increase — that is, when they cannot jointly optimize the three prices of existence under the same configuration of Form, Position, and Action.
 
 $$\boxed{War(A \to B) \equiv A_{kin} \xrightarrow{\text{injection}} S_{B} \uparrow}$$
 
-Where the goal is $U_{Score}(B) \to 0$ (collapse).
+Where the immediate goal is to drive $U_{Score}(B) \downarrow$, up to collapse in the limiting case.
+
+Equivalent thermodynamic reading:
+
+$$\boxed{War(A \to B) \equiv \Delta S_{export}^{A \to B} \uparrow}$$
+
+That is, war is the externalization of instability: one system seeks relief, advantage, or survival by displacing destructive cost into another.
 
 ### 1.2 The Conservation Law of Conflict
 
@@ -1900,3 +1916,10 @@ This framework unifies Sun Tzu, Clausewitz, Boyd, and modern systems theory into
 *The Lady Galaxy Protocol (LGP) for triadic causation analysis*  
 *Canonical Integration: Appendix POLEMOS (POL.1–POL.10) in THEORY OF EVERYTHING_18.5.md*  
 *© 2026 Petar S. Nikolov — CC BY 4.0*
+
+
+---
+
+---
+
+# ═══════════════════════════════════════════════════════════════════════════════

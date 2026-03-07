@@ -18,6 +18,10 @@
 | **U-Model** | Earth (L3) | DP.1-27 (Organizations), NP-S (Society), NP-E (Ecology) |
 | **U-Score** | Metrics | DP.MAP (Protocols), DP-PRE (Preregistration), Baselines |
 
+> **Canonical stability definition (v26.11):** All discovery protocols in this appendix assume the same baseline: stability is **sufficiently prolonged existence at tolerable cost**, relative to a specified observer, task, or criterion. Operationally, predictions test whether **Form** can endure through **Time**, **Position** can remain appropriate in **Space-context**, and **Action** can be sustained through acceptable **Energy** expenditure for long enough to preserve continued use or existence.
+
+> **Triadic necessity theorem (short canon, v26.12):** No realized stable system can exist without enduring as **Form** in **Time**, being distinguishable as **Position** in **Space-context**, and acting through **Energy**. The purpose of these protocols is to test consequences of that triadic necessity, not to replace it with domain-local heuristics.
+
 ---
 
 📺 **Video Presentation:** [U-Model Theory Overview](https://youtu.be/65tvgF9sTQY)
@@ -1113,7 +1117,7 @@ Restoring resting membrane potential in cancer cells forces adherence to Form li
 **Status:** Proposed  
 
 #### 1) Claim
-Organizations with U-Score < 0.618 (golden ratio threshold) exhibit measurable decay in innovation speed.
+Organizations with U-Score < 0.618 (default stability baseline) exhibit measurable decay in innovation speed.
 
 #### 2) Variables & Metrics
 
@@ -4624,8 +4628,8 @@ This is **speculative** (L3) but suggests the triadic metacontext may be **unive
 
 ### DP-PHY.2.2: The Law of Meaning Accounting
 
-> **В същия смисъл, в който енергията не може да бъде създадена или унищожена —**
-> **Смисълът не може да бъде създаден или унищожен.**
+> **In the same sense that energy cannot be created or destroyed —**
+> **Meaning cannot be created or destroyed.**
 
 $$\boxed{\mathcal{R}_{total} = M_{structure} + \mathcal{W}_{entropy} = \text{const}}$$
 
@@ -11075,7 +11079,7 @@ By defining "Meaning" not as a vague sentiment, but as the **limit state of the 
 
 ### The Three Perfections
 
-**§1. The Perfection of FORM → TRUTH (Истина)**
+**§1. The Perfection of FORM → TRUTH**
 
 *"Not just any form, but the perfect form."*
 
@@ -11089,7 +11093,7 @@ $$F_{perfect} \Rightarrow \text{TRUTH}$$
 
 ---
 
-**§2. The Perfection of POSITION → LOVE (Любов)**
+**§2. The Perfection of POSITION → LOVE**
 
 *"Not just any position and resources, but the perfect ones."*
 
@@ -11103,7 +11107,7 @@ $$P_{perfect} \Rightarrow \text{LOVE / JUSTICE}$$
 
 ---
 
-**§3. The Perfection of ACTION → GOODNESS (Добро)**
+**§3. The Perfection of ACTION → GOODNESS**
 
 *"Not just any action, but the perfect action."*
 

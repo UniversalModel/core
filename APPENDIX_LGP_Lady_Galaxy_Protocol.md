@@ -83,6 +83,23 @@ From this morning of insight, the **Iron Law of the Explorer** is born.
 
 ### Mathematical Foundation
 
+#### Canonical Stability Definition (v26.11)
+
+In operational terms, **stability means sufficiently prolonged existence at tolerable cost relative to the observer's task or criterion**.
+
+A system is stable when:
+- its **Form** lasts for long enough,
+- its **Position** fits the relevant context with acceptable spatial cost,
+- its **Action** achieves the required outcome with acceptable energy cost,
+
+and the combined burden of these three prices does not undermine continued use.
+
+This protocol therefore measures not abstract perfection, but **usable endurance**.
+
+**Triadic necessity theorem (short canon, v26.12):** No realized stable system can exist without enduring as **Form** in **Time**, being distinguishable as **Position** in **Space-context**, and acting through **Energy**. In LGP terms, the protocol optimizes these three irreducible conditions rather than inventing domain-specific substitutes for them.
+
+**Epistemic note (v26.13):** LGP is an **evidence-discipline and error-management protocol**. It does not claim to mechanically extract metaphysical truth. Its role is to reduce hallucination, surface contradictions, rank interventions, and improve the reliability of practical judgment under uncertainty.
+
 #### General U-Score (n-component system)
 
 For a system with $n$ stability components:
@@ -124,10 +141,12 @@ $$I_{\text{instab}} = \frac{\sigma_u}{\mu_u} = \frac{\sqrt{\frac{1}{n}\sum_{i=1}
 $$SI = \frac{U_{\text{triad}}}{(1 + \delta)^2}$$
 
 **Critical thresholds:**
-- $SI > 0.618$ → **Stable** (golden ratio threshold, φ)
-- $0.38 < SI < 0.618$ → **At Risk**
-- $SI < 0.38$ → **Critical**
+- $SI > 0.618$ → **Stable by default Earth-like baseline** (domain-adjustable)
+- $0.38 < SI < 0.618$ → **At Risk under default baseline**
+- $SI < 0.38$ → **Critical under default baseline**
 - $I_{\text{instab}} > 0.3$ → System is **unbalanced**, focus on lowest components
+
+These thresholds are **working defaults**, not universal constants. High-stakes or non-Earth-like systems should replace them with domain-calibrated values $\theta_{domain}$.
 
 #### Sensitivity Analysis
 
@@ -180,10 +199,10 @@ $$\vec{S}_0 = (U_F^{(0)},\; U_P^{(0)},\; U_A^{(0)})$$
 
 $$u_i = \sqrt[3]{u_{F,i} \cdot u_{P,i} \cdot u_{A,i}}$$
 
-2. Detect problems as components where $u_i < \varphi = 0.618$
+2. Detect problems as components where $u_i < \theta_{domain}$, with default $\theta_{domain}=0.618$ for ordinary Earth-like contexts
 3. Build the **Problem Set**:
 
-$$\mathcal{P} = \{p_1, p_2, \ldots, p_m\} \quad \text{where } p_j = s_i \text{ with } u_i < \varphi$$
+$$\mathcal{P} = \{p_1, p_2, \ldots, p_m\} \quad \text{where } p_j = s_i \text{ with } u_i < \theta_{domain}$$
 
 4. Represent all problems as a **Problem Matrix** (each row is a problem vector in triadic space):
 
@@ -191,7 +210,7 @@ $$\mathbf{P} = \begin{pmatrix} f_1 & p_1 & d_1 \\ f_2 & p_2 & d_2 \\ \vdots & \v
 
 5. Compute system-level **instability contribution** of each problem:
 
-$$w_j = \frac{\varphi - u_j}{\sum_{k=1}^{m}(\varphi - u_k)} \times 100\%$$
+$$w_j = \frac{\theta_{domain} - u_j}{\sum_{k=1}^{m}(\theta_{domain} - u_k)} \times 100\%$$
 
 **Output:** Ranked Problem Registry $\mathcal{P}$ with Problem Matrix $\mathbf{P}$ and instability weights $w_j$.
 
@@ -1662,7 +1681,7 @@ The canonical threshold $\varphi = 0.618$ is a constant. In volatile systems, a 
 $$\varphi(t) = \varphi_0 \cdot \left(1 + \kappa_\varphi \cdot \frac{\sigma_{\text{system}}(t)}{\sigma_{\text{baseline}}}\right)^{-1}$$
 
 where:
-- $\varphi_0 = 0.618$ (canonical baseline — the golden ratio)
+- $\varphi_0 = 0.618$ (canonical baseline — empirical weighted average across tested systems)
 - $\sigma_{\text{system}}(t) = \text{std}(SI_{t-W}, \ldots, SI_t)$ is the rolling volatility of $SI$ over the last $W$ observations
 - $\sigma_{\text{baseline}}$ is the volatility from the initial scan (Cycle 0)
 - $\kappa_\varphi = 0.1$ (conservatism coefficient)
@@ -1689,7 +1708,7 @@ The canonical $\varphi_0 = 0.618$ is appropriate for standard engineering. In hi
 | Nuclear / Aerospace | $0.72$ | $0.01$ | Near-zero tolerance for instability |
 | Medical / Life-critical | $0.70$ | $0.01$ | Patient safety mandates strict thresholds |
 | Financial / Regulatory | $0.68$ | $0.02$ | Compliance requires conservative margins |
-| **Standard Engineering** | **$0.618$** | **$0.05$** | **Canonical (golden ratio)** |
+| **Standard Engineering** | **$0.618$** | **$0.05$** | **Canonical (empirical default)** |
 | Startup / Prototype | $0.55$ | $0.10$ | Accept higher risk for faster iteration |
 | Research / Exploratory | $0.50$ | $0.10$ | Tolerance for instability during discovery |
 

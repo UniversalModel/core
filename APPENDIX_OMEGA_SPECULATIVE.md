@@ -38,6 +38,10 @@
 > **This is NOT deleted content. It is PRESERVED content with proper framing.**
 >
 > **v23.2 Synchronization:**
+
+> **Canonical stability anchor (v26.11):** Throughout the wider corpus, stability means **sufficiently prolonged existence at tolerable cost**, relative to a specified observer, task, or criterion. In triadic terms: **Form** must endure through **Time**, **Position** must remain maintainable in a context-appropriate **Space** configuration, and **Action** must remain supportable by acceptable **Energy** expenditure. In this appendix, any further speculation about X must be read against that baseline, not as a replacement for it.
+
+> **Triadic necessity theorem (short canon, v26.12):** No realized stable system can exist without enduring as **Form** in **Time**, being distinguishable as **Position** in **Space-context**, and acting through **Energy**. Therefore any X-category proposal must not erase the triad, but explain itself as either derivative, higher-order, or genuinely accompanied by a fourth irreducible existential price.
 > - Aligned with DST v23.2 (Swan8 L1 Completion + Swan9 Scientific Value + Swan10 Honest Assessment)
 > - Ω.9: THE DEATH OF X — Cosmological predictions
 > - Ω.10: 4D ASTROPHYSICS — Stars, galaxies, X-structures
@@ -1424,6 +1428,56 @@ THEN:
 
 ---
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# Ω.12 EDITORIAL COMMENTARY — REMOVED FROM MAIN DOCUMENT (v24.0)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+> ## ⚠️ THIS SECTION CONTAINS EDITORIAL/POLEMICAL CONTENT
+>
+> The following was moved here from the main v24.0 document to preserve
+> **scientific neutrality** of the core theory. These are **opinions**, not science.
+
+---
+
+## Ω.12.1 Original "Dimensional Collapse" Commentary
+
+**Context:** In v24.0, the concept of "Stupidity" (low U-Score) closing dimensions was
+introduced with emotionally charged language. This section preserves the **spirit**
+while the main document uses neutral terminology.
+
+**The Polemical Version (preserved for transparency):**
+
+> "To the joy of the ruling ape-men —
+> their stupidity is too weak to close an entire dimension.
+> But it can close many human lives."
+
+**The Scientific Version (in main document):**
+
+> "Systems with low U-Score exhibit structural decay insufficient for dimensional
+> collapse but significant for local entropy accumulation."
+
+**Why This Was Separated:**
+- Scientific documents should not contain ad hominem language
+- The mathematical point (low U-Score → structural instability) is valid
+- The emotional framing undermines credibility for peer review
+
+---
+
+## Ω.12.2 On Terminology: "Stupidity" vs "Structural Decay"
+
+| Term | Emotional Charge | Scientific Validity |
+|------|------------------|---------------------|
+| **Stupidity** | High | Low (sounds moralistic) |
+| **Structural Decay** | Neutral | High |
+| **Entropy Accumulation** | Neutral | High |
+| **Dimensional Instability** | Neutral | High |
+
+**Recommendation:** Use "Structural Decay" in formal contexts, "Stupidity" only
+in educational/outreach materials where emotional impact is desired.
+
+---
+
 *This document is a companion to DIMENSIONAL_STABILITY_THEOREM.md*
 *Separated in v21.8 to preserve main document's scientific credibility*
 *Content remains valid as L3 hypothesis within the DST framework*
+

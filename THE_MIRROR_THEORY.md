@@ -467,10 +467,10 @@ $$\boxed{ds^2_M = F \cdot (d\Sigma)^2 + P \cdot (d\tau)^2 + A \cdot (d\mathcal{E
 
 ### 12.2 Black Holes as Cosmic Libraries (The Information Paradox — L3)
 
-> *Черните дупки не са унищожители на светове.*
-> *Те са библиотеките на Вселената.*
-> *Това, което е свършило своята работа, се съхранява —*
-> *до новото си използване.*
+> *Black holes are not destroyers of worlds.*
+> *They are the libraries of the Universe.*
+> *That which has completed its work is preserved —*
+> *until its next use.*
 
 #### A. The Observational Fact (External Physics)
 
