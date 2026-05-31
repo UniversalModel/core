@@ -1,0 +1,13 @@
+QTC Phase-3c — natural collective-noise fraction (MELQ proxy), IBM ibm_marrakesh, 2026-05-31
+job id: d8e7u2o7jphs739kbl3g | idle delay-sweep, NO injection | 5 reps x 2048 shots
+
+ delay(us)   P00 DFS (n=5)        P00 exposed (n=5)    R_QTC(natural)
+ 0          0.9603 +/- 0.0040    0.9613 +/- 0.0030    -0.028
+ 20         0.6688 +/- 0.0109    0.6628 +/- 0.0095    +0.018
+ 40         0.5121 +/- 0.0147    0.5176 +/- 0.0094    -0.011
+ 80         0.3740 +/- 0.0118    0.3769 +/- 0.0086    -0.005
+
+ R_QTC(natural) ~ 0 within error at all delays -> device idle noise is ~fully INDEPENDENT.
+ Natural collective fraction ~ 0 => passive DFS gives NO free benefit on this transmon.
+ (Supersedes the single-rep R=-0.21 of the first idle run, which was within qubit/run variance.)
+ QPU usage (billed): 26 s. Cumulative across 3 runs ~ 50 s of the 600 s free budget.
