@@ -1,0 +1,13 @@
+QTC C.3 — collective-fraction sweep, IBM ibm_marrakesh, 2026-05-31
+job id: d8e8d83o3njc73eud0qg | 5 reps x 2048 shots | THETA=pi/2, eta = collective fraction
+
+ eta    P00 DFS (n=5)       P00 exposed        R_QTC
+ 0.00   0.0194+/-0.0016     0.9539+/-0.0060    -20.27
+ 0.25   0.1401+/-0.0066     0.8037+/-0.0073    -3.38
+ 0.50   0.4713+/-0.0121     0.4763+/-0.0073    -0.01    <- crossover
+ 0.75   0.8111+/-0.0099     0.1476+/-0.0048    +0.778
+ 1.00   0.9589+/-0.0041     0.0161+/-0.0020    +0.958
+
+ crossover eta* ~ 0.50  (DFS overtakes exposed when >50% of dephasing is collective)
+ DFS and exposed curves are mirror images crossing at eta=0.5. QPU usage: 29 s.
+ Transmons sit at eta~0 (run 3c) -> no benefit; ion traps ~eta~1 -> large benefit.
