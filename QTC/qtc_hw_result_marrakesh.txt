@@ -1,0 +1,14 @@
+QTC Phase-3 hardware run — IBM ibm_marrakesh (Heron r2, 156q), 2026-05-31
+job id: d8e7mmbalsvc738vt5mg | Loschmidt echo, idle delay, 2048 shots
+
+ enc       delay(us)   P(|00>) = logical fidelity
+ DFS             0     0.9653
+ DFS            40     0.2974
+ exposed         0     0.9712
+ exposed        40     0.4199
+
+ R_QTC (hardware, 40us) = -0.211   (NEGATIVE)
+
+Finding: passive DFS gives NO benefit under the device's native (independent T1/T2)
+noise — consistent with QTC-1 scope (DFS protects collective dephasing only).
+Benefit requires matching collective-symmetry noise (engineered, or MELQ across nodes).
