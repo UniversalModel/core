@@ -1,0 +1,17 @@
+QTC Phase-3b — collective-noise confirmation, IBM ibm_marrakesh (Heron r2), 2026-05-31
+job id: d8e7r887jphs739kbh50 | injected collective RZ(theta) on both qubits | 5 reps x 2048 shots
+
+ enc       theta      P(|00>) mean +/- std (n=5)
+ DFS       0.000    0.9672 +/- 0.0047
+ DFS       0.785    0.9694 +/- 0.0042
+ DFS       1.571    0.9716 +/- 0.0029
+ exposed   0.000    0.9637 +/- 0.0052
+ exposed   0.785    0.4714 +/- 0.0104
+ exposed   1.571    0.0108 +/- 0.0033
+
+ R_QTC (collective, theta=pi/2) = +0.971   (DFS 0.972+/-0.003 vs exposed 0.011+/-0.003)
+ QPU usage (billed): 18 seconds
+
+Conclusion (with the idle-noise run R=-0.21): DFS protection is REAL and NOISE-SYMMETRY-GATED.
+ - independent (idle) noise -> R = -0.21 (no benefit)
+ - collective (injected)   -> R = +0.97 (near-total passive protection)
