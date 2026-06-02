@@ -89,7 +89,7 @@ $$\textbf{Spearman}(C_\text{FPC}, R_\text{QTC}) = 0.9832,\qquad \text{Pearson} =
 
 **Reading.** The coupling is **strictly monotonic** (Spearman 0.98): more compressible → less active correction. It **saturates** once `protected_fraction = 1` — you cannot protect more than 100% of units, so $R_\text{QTC}$ plateaus at 0.925 while $C_\text{FPC}$ keeps climbing (1.4 → 2.7); that ceiling is what depresses the *linear* Pearson to 0.70. Spearman is the correct statistic for the "more → more" claim.
 
-**Status & falsifier.** Supported **in simulation (L2)**. The genuine test is the same experiment on hardware (Phase 3 / MELQ 2-node): if the monotonic coupling vanishes on real devices, **QTC-2 is falsified.**
+**Status & falsifier.** Supported **in simulation (L2)** — Spearman 0.98 on synthetic data, and on **real files** (gzip ratio vs simulated $R_\text{QTC}$) Spearman 0.99 (Pearson 0.83). **Caveat:** the QTC-2 pipeline on real data still uses a *noise simulation*, not hardware logical-error metrics. The genuine test is the same experiment on hardware (Phase 3 / MELQ 2-node) under a truly collective noise channel: if the monotonic coupling vanishes on real devices, **QTC-2 is falsified.**
 
 ---
 
