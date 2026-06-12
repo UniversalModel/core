@@ -1,7 +1,16 @@
-# ИНДЕКС: THEORY_OF_EVERYTHING_v26.md
-*Генериран: 2026-02-27 15:33 | Размер: 3,101,470 bytes | Редове: 70378*
+# INDEX: THEORY_OF_EVERYTHING_v26.md
+*Generated: 2026-02-27 15:33 | Size: 3,101,470 bytes | Lines: 70378*
 
-## СТРУКТУРА
+## STANDALONE v27+ APPENDICES — COMPRESSION / RECORDING SUB-SERIES (Ring C)
+
+> Manual register (the auto-generated monolith TOC follows below). Full integration: `APPENDIX_MASTER_INTEGRATION_MAP.md` §1, §4, §7.
+
+- **FPC** — `APPENDIX_FPC_TRIADIC_COMPRESSION.md` — Triadic Compression (classical FPA codec): compression = writing arbitrary information in the Triadic Language; three sorted sets D_F / D_P / D_A + preserved links; lossless. (+ `fpc_codec_reference.py`)
+- **QTC** — `APPENDIX_QTC_QUANTUM_TRIADIC_CODEC.md` — Quantum Triadic Codec (N=5 / pentadic lift of FPC): dynamic qutrit tokens replace bits; entanglement = the link; decoherence-free encoding reduces stabilization. (+ `qtc_codec_reference.py`)
+
+---
+
+## STRUCTURE
 
 1. The Unified Theory of Stable Existence
 2. 🆕 VERSION 26.0 — THE COMPLETE EDITION
@@ -804,23 +813,23 @@
 799. SSS.10 — CONCLUSION
 800. SSS.11 — REFERENCES
 
-## ЦИТИРАНИ ЗАКОНИ
+## CITED LAWS
 
 
-## ЦИТИРАНИ ЧЛЕНОВЕ (с привързка към закон)
+## CITED ARTICLES (linked to law)
 
 
-## ЛИЦА
+## PERSONS
 
 
-## ЕИК / ДРУЖЕСТВА
+## UIC / COMPANIES
 
 
-## СУМИ
+## AMOUNTS
 
 
-## ДАТИ
+## DATES
 
 
 ---
-*Елементи: 0 | Закони: 0 | Членове: 0 | Лица: 0*
+*Elements: 0 | Laws: 0 | Articles: 0 | Persons: 0*
