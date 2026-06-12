@@ -25,9 +25,9 @@
 
 **Triadic Compression (the FPA codec)** is a lossless (and optionally *structural/lossy*) encoder built on the central claim of U-Theory: any realized, distinguishable piece of information decomposes into exactly three irreducible kinds —
 
-1. **Form (Форма)** — *what it is* (the scale-normalised pattern / identity);
-2. **Position (Позиция)** — *where it is* (its coordinate in the information volume, context included);
-3. **Action (Действие)** — *what it does* (the operation, transform, or relation it carries).
+1. **Form** — *what it is* (the scale-normalised pattern / identity);
+2. **Position** — *where it is* (its coordinate in the information volume, context included);
+3. **Action** — *what it does* (the operation, transform, or relation it carries).
 
 The codec performs a **multidimensional, recursive mapping of the triad onto arbitrary information**, then writes the result as **three ordered, frequency-sorted sets with preserved links**:
 
@@ -162,7 +162,7 @@ where $\mathrm{fid},\mathrm{pid},\mathrm{aid}$ are **ranks** into $D_F,D_P,D_A$ 
 > $$f_1 \sim f_2 \iff \exists\, g \in G:\; f_1 = g \cdot f_2.$$
 > $D_F$ stores one **orbit representative** per class; the per-token element $g_i=(s_i,a_i)$ recovers the instance.
 
-This formalises *"мащабирам по константи или релации"*:
+This formalises *"I scale by constants or relations"*:
 
 - **Constant scaling** $s$: a shape and the same shape enlarged $s\times$ (each cell → an $s\times s$ block) share one Form entry; only $s_i$ differs. Scale-invariance.
 - **Relation** $\rho$: a shape and its rotation/reflection/affine image share one Form entry; the relation is carried by the **Action** channel ($\mathrm{IDENT}, \mathrm{ROT90}, \mathrm{ROT180}, \mathrm{INVERT}, \dots$).
