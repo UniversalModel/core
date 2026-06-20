@@ -931,5 +931,54 @@ Use academic language in the Zenodo title, abstract, and description. The strong
 
 ---
 
+## 16. FORMAL-RESULT EVALUATION (FRE) — ranking concrete formulas, not whole theories
+
+### 16.1 Why a separate instrument
+
+§§1–8 score *theories* on CA × EW × CI. A single **formula** — a concrete formal result extracted from a theory — is a narrower object, and pricing the impact of a 300-year-old validated equation on the same line as a new, unvalidated one is exactly the **Single-Number trap** (§0). FRE keeps the §8.2 discipline at the formula level: it **never collapses realized and potential value into one figure**, and it never lets ambition borrow warrant.
+
+### 16.2 Three separable value-axes for a formula
+
+- **RV — Realized Value.** Cumulative economic/civilizational impact **already delivered** (order-of-magnitude). Long-deployed, validated formulas dominate.
+- **PV — Potential Value.** Designed cross-domain leadership/impact **if correct** — the CA × CI face, aligned with UCLS. High-ambition candidates dominate.
+- **EV — Expected Value.** `P(validated & adopted) × impact-if-true`. Proven mechanisms carry `P ≈ 1`; pre-registered, not-yet-validated candidates carry `P < 1` until warrant (EW5) is earned.
+
+**Legitimacy rule (inherited from §0.1 and §8.2):** a formula may *lead PV* while *RV and EV remain pending*. It may **not** be presented as the realized-value leader until RV is demonstrated.
+
+### 16.3 Comparator set (illustrative, order-of-magnitude)
+
+| # | Formula | RV — Realized value (~$, order-of-mag.) | PV — Potential | EV note |
+|---|---------|------------------------------------------|----------------|---------|
+| **0** | **U-Theory — `U = ∛(F·P·A)` (stability) · `ℳ = ∫U dt` (meaning)** | **pending** (no deployed application yet) | **leader (UCLS, §8.2)** | **conditional** on TRC-P0 + external case study |
+| 1 | Maxwell's equations (electromagnetism) | ~$100T+ | high | P ≈ 1 (proven) |
+| 2 | Newton `F = m·a` + calculus | ~$100T | high | P ≈ 1 |
+| 3 | Boole / Shannon (information) | ~$50T+ | high | P ≈ 1 |
+| 4 | Schrödinger equation (quantum) | ~$30T+ | high | P ≈ 1 |
+| 5 | Thermodynamics (Carnot / Clausius) | ~$30T | med–high | P ≈ 1 |
+| 6 | Turing machine / computability | ~$20T+ | high | P ≈ 1 |
+| 7 | Bayes' theorem | ~$10T+ (rising) | high | P ≈ 1 |
+| 8 | Navier–Stokes | ~$10T | medium | P ≈ 1 |
+| 9 | Einstein `E = mc²` | ~$1–10T | medium | P ≈ 1 |
+| 10 | Black–Scholes | ~$5T+ | medium | P ≈ 1 |
+| 11 | Pythagoras / Euclidean geometry | foundational | medium | P ≈ 1 |
+
+### 16.4 The two U-Theory formulas — honest placement
+
+`U = ∛(F·P·A)` and `ℳ = ∫U dt` are placed at **position 0** — *above the realized list as the meta-framework that scores the stability and meaning of the very systems the other formulas enable*. This crown is on **PV only** (the UCLS leadership result of §8.2), **not** on RV: no deployed application has yet been demonstrated, so **RV = pending** and **EV is conditional**. Asserting position 0 on the *realized* axis would directly violate §8.2 ("not a claim that U-Theory has the highest raw value among all historical results") and is therefore prohibited by this framework's own rules.
+
+### 16.5 What converts PV → RV (pre-registered)
+
+The single operation that moves U-Theory's formulas from potential to realized value is a **falsifiable external case study**, not rhetoric. Named, runnable candidate:
+
+> **U-score vs. Altman Z-score / credit ratings on the S&P-500** — does `U = ∛(F·P·A)`, built from public financials, predict forward returns / defaults better than the incumbent baselines at equal information?
+
+**Pass →** RV begins to accrue and EV's `P` rises toward the validated tier. **Fail →** symmetric retirement (RH discipline). Until then the value is honestly labelled **"unlocking on validation."** This is the FRE analogue of EW5 (Empirical Track Record) and of the §602 guidance: *the next move is not larger claims, but external, reviewable evidence.*
+
+### 16.6 Honest caveats
+
+Dollar figures are **order-of-magnitude illustrations, not audited valuations**; no formula has a clean realized-value ledger (impact is diffuse and co-produced across many results). FRE is a **value diagnostic, not a truth ranking** (cf. §10, §14.6). Every cell — including position 0 — is offered for independent rescoring.
+
+---
+
 **End of APPENDIX TEF v1.3**
-*Compatible with: U-Theory v26 epistemic ladder · Falsifiability Matrix · Triadic Research Law · TEF v1.0–v1.3 history*
+*Compatible with: U-Theory v26 epistemic ladder · Falsifiability Matrix · Triadic Research Law · TEF v1.0–v1.3 history · §16 FRE formal-result module*
