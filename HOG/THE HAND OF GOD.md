@@ -14,12 +14,13 @@
 | **Date** | 2026-10-10 |
 | **Framework** | U-Theory / U-Model · UMSG |
 | **Status** | Specification with measured components. Extends `APPENDIX_LGP` v.27 without changing it |
-| **Version** | 1.0 |
+| **Version** | 1.1 (v1.0 frozen as `THE HAND OF GOD v1.0.md`) |
 | **Epistemic Level** | **L1 — operational.** Every number is marked *measured* (on a running system), *synthetic* (simulation, not Jev data) or *specified* (a design rule of this appendix). The review record in HOG.13 is L0. Nothing here is L3 or L4. No accuracy claim about Jev on this workflow can be made: no outcome has been recorded yet (HOG.6.1) |
 | **Prerequisites** | `APPENDIX_LGP` v.27 (the 12 steps and the Σ formulas), `APPENDIX_TAA` (the agents F, P, A, Σ), `APPENDIX_JSR` (the noise of a single judge) |
 | **Function** | Defines how a typed probabilistic judge is attached to LGP: where it is called, what it is asked, how its answers are read, when its probabilities may be corrected, and where it must not be used |
 | **Invariant** | What can be computed is never asked. What is asked is typed, logged and subordinate to measurement. No answer is permission to act |
 | **Companion code** | `hog_calibration_reference.py` (HOG.6). The Jev review packets of HOG.13 are kept by the author and not published |
+| **Time stamps** | Every Jev opinion and every release of this appendix carries an OpenTimestamps proof (HOG.7.5); the proofs of this appendix are in `time stamps/` |
 | **Copyright** | © 2026 Petar Nikolov, CC BY 4.0 · code MIT |
 
 ---
@@ -743,6 +744,87 @@ Three findings bear on this appendix.
 
 ---
 
+## HOG.7.5 — The time stamp: a proof for every judgment and every milestone
+
+A judgment is accountable only if nobody can rewrite it afterwards: not the agent who asked,
+not the judge who answered, and not the author. An independent researcher has no institution
+to do this for him. There is no registrar, no countersigned lab notebook and no submission
+date at a journal. A time stamp anchored in a public blockchain needs no institution, no fee
+and no permission. Anyone can check it, and nobody can backdate it.
+
+### HOG.7.5.1 What is stamped (implemented 2026-10-10, `jev_ots.py`)
+
+**Every opinion.** Every Jev opinion is one line of the decision journal. A *sweep* stamps
+every line that has no proof yet:
+
+- it takes the SHA-256 of the line's exact bytes and salts each hash with 16 random bytes;
+- it builds one Merkle tree over all of them;
+- it sends **only the 32-byte tip** to at least two of four public OpenTimestamps calendars.
+
+Each line keeps its own path to that tip, so every opinion has an individual proof, while
+the calendars learn nothing about any content. A sweep runs:
+
+- after every `jev_brief.py` command that calls Jev;
+- at the end of every agent task;
+- once a day on a schedule, together with the upgrade of pending proofs.
+
+Stamping never blocks or fails a Jev call. If the calendars cannot be reached, the lines wait
+for the next sweep.
+
+**Every milestone.** The list is defined:
+
+- canonical releases of appendices and PDFs;
+- runtime releases, with their file hashes;
+- preregistrations, before their outcome;
+- recorded outcomes;
+- publications.
+
+Proofs stay beside what they prove: private proofs beside private records, public proofs
+beside the public artefact (this corpus keeps them in `time stamps/`).
+
+### HOG.7.5.2 What it gave on the first day (*measured*)
+
+| Item | Result |
+|---|---|
+| First sweep of the whole decision journal | 9,098 opinions, one Merkle tree, accepted by 4 of 4 calendars, 6.9 s |
+| Proofs left without a stamp after the sweep | 0 |
+| Independent check of one exported opinion | the official `ots` client read the proof: file hash `d7de9af6…2ddd` equal to the SHA-256 of the exported line, pending at the calendars until Bitcoin confirms |
+| This appendix, v1.0 (md, pdf and code) | stamped 2026-10-10, proofs in `time stamps/` |
+| The runtime release that added stamping | stamped as a milestone, 7 files |
+| Offline tests of the stamping module | 7 of 7; the whole runtime suite 255 of 255 |
+
+The design was put to Jev before it was built. Two panels of six angles each
+(`panel-e0c8e5990332415797ae2a4ed2a4ccfb`, `panel-b5dd8d1b01fa44058e262e4c66a63015`) returned
+these results:
+
+- a batched sweep rather than stamping inside each call: **ROBUST**, 0.97;
+- a defined list of milestones: **ROBUST**, 0.99;
+- proofs kept beside the records they prove: **ROBUST**, 1.00;
+- a stamp on every preregistration at the moment it is made: **SUPPORTED**, 0.81 against a
+  mirror of 0.08.
+
+### HOG.7.5.3 How anyone checks it
+
+`jev_ots.py export <call_id>` writes the exact journal line and its `.ots` file. The standard
+OpenTimestamps client then verifies the proof against Bitcoin, with no trust in the author.
+Proofs stay *pending* for a few hours, until a Bitcoin block confirms the calendars'
+aggregate. `jev_ots.py upgrade`, run daily, completes them.
+
+> **HOG-7 (Law of the record).** *A judgment that is not timestamped can be rewritten. A
+> preregistration that is not timestamped before its outcome is not a preregistration.*
+
+### HOG.7.5.4 What a time stamp does not prove
+
+- **Only existence.** It proves that these exact bytes existed by a moment. It says nothing
+  about whether they are true, good, calibrated or original. A time stamp is not a review.
+- **Not authorship on its own.** It proves who had the bytes first only together with the
+  record of who published them.
+- **A stale manifest.** A stamp of an out-of-date file manifest proves only that manifest.
+- **Private content stays private.** Only hashes leave the machine. A proof for a private
+  record reveals nothing without the record, and neither is published.
+
+---
+
 ## HOG.8 — Limits of knowability: what the hand cannot reach
 
 The source asked whether there is a limit to knowability. For an instrument,
@@ -829,6 +911,7 @@ cannot be its own outcome.
 | **F9** | Pillar values from anchored Score expectations place pillars in the same LGP band as a deterministic measure of the same pillar | Every pillar that has both `measured_u` and a Jev U_X: share of band agreement, and the size of the gaps | **NOT TESTED**: the vendor itself calls score levels "weak in numerical calibration" (HOG.3) |
 | **F10** | No LGP+ package contains a blocked, harmful, evidence-less or non-improving measure | Audit every `.lgp.json` package against the exclusion rules of HOG.2.5, Lock 3 | **ENFORCED IN CODE**: the offline test seeds a harmful measure and finds it excluded; no audit of live results yet |
 | **F11** | The POS gate fed by LGP+ lower bounds stops readiness-forbidden commitments without blocking prepared ones | Seeded commitments with known readiness and irreversibility; count wrongful passes and wrongful blocks | **NOT IMPLEMENTED** (HOG-P3) |
+| **F12** | Every recorded Jev opinion has a valid time-stamp proof within one day | Daily `jev_ots.py status` shows 0 unstamped lines, and a random exported opinion verifies with the official `ots` client | **IMPLEMENTED**: first sweep 9,098 of 9,098; one exported proof read correctly by the official client; Bitcoin confirmation pending |
 
 F8 is kept on purpose. A matrix with no failed row would not be credible.
 
@@ -984,6 +1067,8 @@ bear on the text, as opinions, never as proof.
 - Nikolov, P. (2026). *U-Theory.* https://doi.org/10.17605/OSF.IO/74XGR
 
 ---
+
+*Version history: v1.1 (2026-10-10) adds HOG.7.5, the time-stamp system (law HOG-7, falsifier F12). v1.0 (2026-10-10) is frozen as `THE HAND OF GOD v1.0.md` (SHA-256 `75974a76…8e3a`), with its OpenTimestamps proofs in `time stamps/`.*
 
 *Petar Nikolov · ORCID 0009-0001-8669-2276 · UMSG — Universal Model of
 Sustainable Governance · 2026-10-10*

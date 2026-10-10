@@ -34,12 +34,16 @@ are **uncalibrated** for this workflow (HOG.6.1). The falsifiers are listed in H
 
 | File | SHA-256 |
 |---|---|
-| `THE HAND OF GOD.md` | `75974a76d565980d6990399af36e73c0e68342e78e91924c126688b56b4c8e3a` |
-| `THE HAND OF GOD.md.pdf` | `234afbb2d6b87d730aa295b0317f2d1bfacdb3d0d2e8ccd9f18e33d446da0a97` |
+| `THE HAND OF GOD.md` | `abda801b0fc4a67f926736084626233bce0294b18287213c40823212140d298e` |
+| `THE HAND OF GOD.md.pdf` | `ba20656554c826d2ea8f99a82d909bcabbca622fd7888c2b05d00ce92488f038` |
 | `hog_calibration_reference.py` | `9fe00c439305b3f11d8b94f8761ed48cbc7e8dfa2b26d4602274830a27a06fa4` |
 
-These hashes were timestamped with OpenTimestamps on 2026-10-10; the proofs are kept by
-the author.
+These hashes (version 1.1) were timestamped with OpenTimestamps on 2026-10-10; the proofs
+are kept by the author. Version 1.0 is in this repository's history (commit `fbc0f453`);
+its md and pdf hashes were `75974a76…8e3a` and `234afbb2…0a97`, also timestamped.
+
+Version 1.1 adds HOG.7.5: every Jev opinion and every project milestone receives an
+OpenTimestamps proof, so the decision record cannot be rewritten afterwards.
 
 ## License and author
 
