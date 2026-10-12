@@ -14,7 +14,7 @@
 | **Date** | 2026-10-10 |
 | **Framework** | U-Theory / U-Model · UMSG |
 | **Status** | Specification with measured components. Extends `APPENDIX_LGP` v.27 without changing it |
-| **Version** | 1.2 (v1.1 and v1.0 frozen as `THE HAND OF GOD v1.1.md` and `THE HAND OF GOD v1.0.md`) |
+| **Version** | 1.3 (earlier versions frozen as `THE HAND OF GOD v1.2.md`, `v1.1.md`, `v1.0.md`) |
 | **Epistemic Level** | **L1 — operational.** Every number is marked *measured* (on a running system), *synthetic* (simulation, not Jev data) or *specified* (a design rule of this appendix). The review record in HOG.13 is L0. Nothing here is L3 or L4. No accuracy claim about Jev on this workflow can be made: no outcome has been recorded yet (HOG.6.1) |
 | **Prerequisites** | `APPENDIX_LGP` v.27 (the 12 steps and the Σ formulas), `APPENDIX_TAA` (the agents F, P, A, Σ), `APPENDIX_JSR` (the noise of a single judge) |
 | **Function** | Defines how a typed probabilistic judge is attached to LGP: where it is called, what it is asked, how its answers are read, when its probabilities may be corrected, and where it must not be used |
@@ -54,8 +54,10 @@ survives checking, corrects what does not, and drops what cannot be verified.
 Every disposition is listed in HOG.9.
 
 **On the name.** The title is a marketing name, a public brand for the work, and has
-no religious meaning. It makes no claim about God, faith or any religion, and no part of
-the method depends on it. Technically, the
+no religious meaning. Its slight touch of the divine marks what is truly important, as
+states do in their mottos and oaths and as parties such as the Christian Democrats do in
+their names. It makes no claim about God, faith or any religion, and no part of the
+method depends on it. Technically, the
 "hand" is the layer that turns a protocol into acts of judgment: one typed
 decision at a time, each logged, each checkable later against what happened. A
 hand that cannot be checked is not trusted with anything. This hand decides
@@ -1072,7 +1074,7 @@ bear on the text, as opinions, never as proof.
 
 ---
 
-*Version history: v1.2 (2026-10-12) states that the title is a marketing name with no religious meaning (HOG.0, HOG.11). v1.1 (2026-10-10, frozen as `THE HAND OF GOD v1.1.md`, SHA-256 `abda801b…298e`) adds HOG.7.5, the time-stamp system (law HOG-7, falsifier F12). v1.0 (2026-10-10) is frozen as `THE HAND OF GOD v1.0.md` (SHA-256 `75974a76…8e3a`), with its OpenTimestamps proofs in `time stamps/`.*
+*Version history: v1.3 (2026-10-12) explains the touch of the divine in the name (HOG.0). v1.2 (2026-10-12, frozen as `THE HAND OF GOD v1.2.md`, SHA-256 `d0003dac…955c`) states that the title is a marketing name with no religious meaning (HOG.0, HOG.11). v1.1 (2026-10-10, frozen as `THE HAND OF GOD v1.1.md`, SHA-256 `abda801b…298e`) adds HOG.7.5, the time-stamp system (law HOG-7, falsifier F12). v1.0 (2026-10-10) is frozen as `THE HAND OF GOD v1.0.md` (SHA-256 `75974a76…8e3a`), with its OpenTimestamps proofs in `time stamps/`.*
 
 *Petar Nikolov · ORCID 0009-0001-8669-2276 · UMSG — Universal Model of
 Sustainable Governance · 2026-10-10*

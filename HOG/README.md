@@ -34,15 +34,17 @@ are **uncalibrated** for this workflow (HOG.6.1). The falsifiers are listed in H
 
 | File | SHA-256 |
 |---|---|
-| `THE HAND OF GOD.md` | `d0003dacd1af44c5409b5834ca460c17b458ba118726fec4029890cb8ece955c` |
-| `THE HAND OF GOD.md.pdf` | `bdd813b5ccac8d41574a0cf7fb8b9d76b19e04e9e864d00d802ef9462b07dbd3` |
+| `THE HAND OF GOD.md` | `d57a708e754fc9f2be81b12e6a4f51aed186ff5a3e2f751e4605ebb085cbe800` |
+| `THE HAND OF GOD.md.pdf` | `fc750f713c8171defaafc46d0f5437bfed97117b4f04b980db9cf66e7f2ef570` |
 | `hog_calibration_reference.py` | `9fe00c439305b3f11d8b94f8761ed48cbc7e8dfa2b26d4602274830a27a06fa4` |
 
-These hashes (version 1.2) were timestamped with OpenTimestamps on 2026-10-10; the proofs
+These hashes (version 1.3) were timestamped with OpenTimestamps on 2026-10-10; the proofs
 are kept by the author. Version 1.0 is in this repository's history (commit `fbc0f453`);
 its md and pdf hashes were `75974a76…8e3a` and `234afbb2…0a97`, also timestamped.
 
-Version 1.2 states that the title is a marketing name with no religious meaning.
+Version 1.3 explains the touch of the divine in the name: it marks what is truly important, as
+states do in their mottos and oaths and parties such as the Christian Democrats do in their names.
+Version 1.2 (commit `a7dc17d0`) states that the title is a marketing name with no religious meaning.
 Version 1.1 (commit `00054508`, md `abda801b…298e`, pdf `ba206565…f038`) added HOG.7.5: every Jev opinion and every project milestone receives an
 OpenTimestamps proof, so the decision record cannot be rewritten afterwards.
 
