@@ -1,0 +1,204 @@
+{
+ "schema": "jev-perspectives.v1",
+ "decision_id": "umodel-personal-happiness-triad-20261013",
+ "call_budget": 120,
+ "lenses": [
+  {
+   "id": "self_concordance",
+   "pillar": "form",
+   "angles": ["base", "order", "facts", "skeptic", "advocate", "blind"],
+   "brief": {
+    "decision_id": "happiness-form-self-20261013",
+    "objective": "Assess whether the first condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "Definition under review: 'Personal happiness: 1. Being who you want to be. 2. Living in an environment that supports you. 3. Doing what you have the talent and desire to do.' This lens judges only condition 1.",
+    "evidence": [
+     {"id": "F1", "fact": "Self-determination theory: satisfaction of the need for autonomy predicted well-being in each of four countries (Belgium, China, USA, Peru) in a cross-cultural study.", "n": 1051, "source": "published literature (Chen et al. 2015), recalled, not re-verified in this session"},
+     {"id": "F2", "fact": "Ryff's model of psychological well-being has six dimensions; two of them are autonomy and self-acceptance.", "n": 6, "source": "published literature (Ryff 1989), recalled"},
+     {"id": "F3", "fact": "Goals pursued for autonomous, self-concordant reasons were attained more often and produced larger well-being gains in longitudinal student samples.", "n": 3, "source": "published literature (Sheldon and Elliot 1999), recalled; n = number of studies"}
+    ],
+    "mechanism": "Acting from one's own values reduces internal conflict and makes effort self-sustaining, which supports lasting well-being.",
+    "alternatives": [
+     "Being who you are (authenticity: acting from one's own values)",
+     "Becoming who you want to be (reaching an ideal self)",
+     "Being who you are while growing toward who you want to be",
+     "Keep the current wording 'Being who you want to be'"
+    ],
+    "constraints": ["The definition must stay at three conditions.", "Wording must be short enough for a public slogan."],
+    "counterevidence": [
+     {"id": "FC1", "fact": "Self-discrepancy theory: a large gap between the actual self and the ideal self predicts dejection, so striving to be who you want to be can lower well-being when the ideal is out of reach."},
+     {"id": "FC2", "fact": "A twin-study meta-analysis attributes about 32-36% of the variance in well-being to genetic factors, which are not under the person's control."}
+    ],
+    "missing": ["Whether readers understand the wording as authenticity or as reaching an ideal self."],
+    "threshold": "Prefer the wording whose meaning is best supported by well-being research and least likely to backfire.",
+    "claims": {
+     "self_necessary": "Being who you want to be, in the sense of acting from one's own values, is a necessary condition of lasting personal happiness for most people."
+    },
+    "choices": {
+     "self_wording": {
+      "question": "Which wording of condition 1 is best supported by well-being research?",
+      "options": {
+       "authentic": "Being who you are (acting from your own values)",
+       "ideal": "Becoming who you want to be",
+       "staged": "Being who you are while growing toward who you want to be",
+       "current": "Being who you want to be"
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {"id": "without_f1", "kind": "leave_one_out", "evidence_id": "F1"},
+    {"id": "without_f3", "kind": "leave_one_out", "evidence_id": "F3"},
+    {"id": "collectivist", "kind": "assumption", "parameter": "individualism_index_of_society", "baseline": 70, "value": 20, "unit": "Hofstede individualism index (0-100)", "rationale": "Hypothetical collectivist culture; not a new observation."},
+    {"id": "deprivation", "kind": "assumption", "parameter": "share_of_income_spent_on_basic_needs", "baseline": 0.3, "value": 0.9, "unit": "fraction", "rationale": "Hypothetical material deprivation; not a new observation."}
+   ]
+  },
+  {
+   "id": "supportive_environment",
+   "pillar": "position",
+   "angles": ["base", "order", "facts", "skeptic", "advocate", "blind"],
+   "brief": {
+    "decision_id": "happiness-position-environment-20261013",
+    "objective": "Assess whether the second condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "Definition under review: 'Personal happiness: 1. Being who you want to be. 2. Living in an environment that supports you. 3. Doing what you have the talent and desire to do.' This lens judges only condition 2.",
+    "evidence": [
+     {"id": "P1", "fact": "In a study that followed its original cohort for more than 80 years, the quality of close relationships was the strongest predictor of later-life health and happiness.", "n": 724, "source": "Harvard Study of Adult Development, recalled"},
+     {"id": "P2", "fact": "A meta-analysis of person-environment fit found person-organisation fit correlated with job satisfaction at about rho = .44 and person-job fit at about .56.", "n": 172, "source": "published literature (Kristof-Brown et al. 2005), recalled; n = number of studies"},
+     {"id": "P3", "fact": "Six factors explain about three-quarters of the variance in national average life evaluations: GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity and low corruption.", "n": 150, "source": "World Happiness Report, recalled; n = approximate number of countries"}
+    ],
+    "mechanism": "Support from people and institutions buffers stress and makes effort productive, so the same person flourishes more in a supportive environment.",
+    "alternatives": [
+     "An environment that supports you (current)",
+     "Close relationships and a community that support you",
+     "An environment that fits you and that you help shape",
+     "A safe, free environment with people who support you"
+    ],
+    "constraints": ["The definition must stay at three conditions.", "Wording must be short enough for a public slogan."],
+    "counterevidence": [
+     {"id": "PC1", "fact": "Hedonic adaptation: lottery winners were not significantly happier than controls months later, so changes in circumstances often fade."},
+     {"id": "PC2", "fact": "People in the same environment differ widely and stably in well-being, so the environment explains only part of individual happiness."}
+    ],
+    "missing": ["Whether 'supports you' is read as material support, relationships, or both."],
+    "threshold": "Prefer the wording whose meaning is best supported by well-being research.",
+    "claims": {
+     "env_necessary": "Living in an environment that supports you is a necessary condition of lasting personal happiness for most people."
+    },
+    "choices": {
+     "env_wording": {
+      "question": "Which wording of condition 2 is best supported by well-being research?",
+      "options": {
+       "current": "Living in an environment that supports you",
+       "relationships": "Close relationships and a community that support you",
+       "fit": "An environment that fits you and that you help shape",
+       "safe_free": "A safe, free environment with people who support you"
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {"id": "without_p1", "kind": "leave_one_out", "evidence_id": "P1"},
+    {"id": "without_p3", "kind": "leave_one_out", "evidence_id": "P3"},
+    {"id": "poor_country", "kind": "assumption", "parameter": "gdp_per_capita", "baseline": 50000, "value": 2000, "unit": "USD per year", "rationale": "Hypothetical low-income country; not a new observation."},
+    {"id": "isolated", "kind": "assumption", "parameter": "number_of_close_relationships", "baseline": 4, "value": 0, "unit": "people", "rationale": "Hypothetical socially isolated person; not a new observation."}
+   ]
+  },
+  {
+   "id": "talent_desire",
+   "pillar": "action",
+   "angles": ["base", "order", "facts", "skeptic", "advocate", "blind"],
+   "brief": {
+    "decision_id": "happiness-action-talent-20261013",
+    "objective": "Assess whether the third condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "Definition under review: 'Personal happiness: 1. Being who you want to be. 2. Living in an environment that supports you. 3. Doing what you have the talent and desire to do.' This lens judges only condition 3.",
+    "evidence": [
+     {"id": "A1", "fact": "Flow research using experience sampling: optimal experience arises when the challenge of an activity matches the person's skill, reported across many countries and activities.", "n": 1, "source": "published literature (Csikszentmihalyi), recalled; n = research programme"},
+     {"id": "A2", "fact": "In a randomised online trial, using one's signature strengths in a new way for one week increased happiness and reduced depressive symptoms for up to six months.", "n": 577, "source": "published literature (Seligman et al. 2005), recalled"},
+     {"id": "A3", "fact": "In a long national panel, becoming unemployed lowered life satisfaction substantially and people did not fully return to their earlier level over the following years.", "n": 24000, "source": "German Socio-Economic Panel (Lucas et al. 2004), recalled"}
+    ],
+    "mechanism": "Activity that uses one's talents and is wanted for its own sake produces engagement, competence and a sense of progress.",
+    "alternatives": [
+     "Doing what you have the talent and desire to do (current)",
+     "Doing meaningful work that uses your talents",
+     "Doing what develops your talents and serves others",
+     "Doing what you are good at"
+    ],
+    "constraints": ["The definition must stay at three conditions.", "Wording must be short enough for a public slogan."],
+    "counterevidence": [
+     {"id": "AC1", "fact": "Obsessive passion for an activity is associated with burnout, conflict and lower well-being (dualistic model of passion)."},
+     {"id": "AC2", "fact": "Job satisfaction correlates only moderately with life satisfaction (meta-analytic rho about .44), so many people are satisfied with life without work that matches their talents."}
+    ],
+    "missing": ["Whether 'doing' includes unpaid activity, family care and contribution to others."],
+    "threshold": "Prefer the wording whose meaning is best supported by well-being research.",
+    "claims": {
+     "talent_necessary": "Doing what you have the talent and desire to do is a necessary condition of lasting personal happiness for most people."
+    },
+    "choices": {
+     "action_wording": {
+      "question": "Which wording of condition 3 is best supported by well-being research?",
+      "options": {
+       "current": "Doing what you have the talent and desire to do",
+       "meaningful": "Doing meaningful work that uses your talents",
+       "serves_others": "Doing what develops your talents and serves others",
+       "good_at": "Doing what you are good at"
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {"id": "without_a2", "kind": "leave_one_out", "evidence_id": "A2"},
+    {"id": "without_a3", "kind": "leave_one_out", "evidence_id": "A3"},
+    {"id": "no_matching_activity", "kind": "assumption", "parameter": "weekly_hours_in_activity_matching_talent", "baseline": 30, "value": 0, "unit": "hours per week", "rationale": "Hypothetical person with no time for such activity; not a new observation."},
+    {"id": "unpaid_talent", "kind": "assumption", "parameter": "income_from_that_activity_relative_to_subsistence", "baseline": 1.5, "value": 0.5, "unit": "ratio", "rationale": "Hypothetical activity that does not pay a living; not a new observation."}
+   ]
+  },
+  {
+   "id": "triad_structure",
+   "pillar": "form",
+   "angles": ["base", "order", "facts", "skeptic", "advocate", "blind"],
+   "brief": {
+    "decision_id": "happiness-form-structure-20261013",
+    "objective": "Assess whether a three-condition definition of personal happiness is complete and whether its conditions combine non-compensatorily.",
+    "decision": "Definition under review: 'Personal happiness: 1. Being who you want to be. 2. Living in an environment that supports you. 3. Doing what you have the talent and desire to do.' This lens judges only the structure: completeness and how the three combine.",
+    "evidence": [
+     {"id": "T1", "fact": "Self-determination theory names exactly three basic psychological needs - autonomy, competence and relatedness - which map approximately onto the three conditions.", "n": 3, "source": "published literature (Deci and Ryan), recalled"},
+     {"id": "T2", "fact": "The PERMA model lists five elements of well-being: positive emotion, engagement, relationships, meaning and accomplishment.", "n": 5, "source": "published literature (Seligman 2011), recalled"},
+     {"id": "T3", "fact": "The U-Model combines the three conditions as a geometric mean, U = cube root of (F x P x A), so one condition near zero drives the total toward zero.", "n": 1, "source": "model definition"}
+    ],
+    "mechanism": "If each condition is a separate requirement, strength in two cannot replace the absence of the third, so a multiplicative form fits better than a sum.",
+    "alternatives": [
+     "Keep three conditions as they are",
+     "Add a fourth condition: meaning or contributing to others",
+     "Add a fourth condition: physical and mental health",
+     "Keep three, but state that what you do includes contributing to others"
+    ],
+    "constraints": ["The author's framework is triadic; a fourth condition changes the model, not only the slogan."],
+    "counterevidence": [
+     {"id": "TC1", "fact": "Meaning (serving something larger than oneself) and physical health are established determinants of well-being and are not named explicitly in the three conditions."},
+     {"id": "TC2", "fact": "Most published well-being models are tested with additive statistical models; a direct test of a multiplicative combination of these three conditions is not known to the author."}
+    ],
+    "missing": ["A direct empirical test of additive versus multiplicative combination of the three conditions."],
+    "threshold": "Prefer the structure best supported by well-being research; a claim of non-compensation needs direct evidence.",
+    "claims": {
+     "triad_complete": "The three conditions together cover the main established determinants of personal happiness.",
+     "non_compensatory": "A person who fully lacks any one of the three conditions cannot be lastingly happy, whatever the level of the other two."
+    },
+    "choices": {
+     "structure": {
+      "question": "Which structure is best supported by well-being research?",
+      "options": {
+       "three_as_is": "Keep three conditions as they are",
+       "add_meaning": "Add a fourth: meaning or contributing to others",
+       "add_health": "Add a fourth: physical and mental health",
+       "three_with_contribution": "Keep three, with 'what you do' including contributing to others"
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {"id": "without_t1", "kind": "leave_one_out", "evidence_id": "T1"},
+    {"id": "without_t3", "kind": "leave_one_out", "evidence_id": "T3"},
+    {"id": "poor_health", "kind": "assumption", "parameter": "health_status", "baseline": 0.9, "value": 0.2, "unit": "fraction of full health", "rationale": "Hypothetical serious chronic illness; not a new observation."},
+    {"id": "old_age", "kind": "assumption", "parameter": "age", "baseline": 35, "value": 80, "unit": "years", "rationale": "Hypothetical older person; not a new observation."}
+   ]
+  }
+ ]
+}

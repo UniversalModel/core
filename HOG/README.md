@@ -48,6 +48,14 @@ Version 1.2 (commit `a7dc17d0`) states that the title is a marketing name with n
 Version 1.1 (commit `00054508`, md `abda801b…298e`, pdf `ba206565…f038`) added HOG.7.5: every Jev opinion and every project milestone receives an
 OpenTimestamps proof, so the decision record cannot be rewritten afterwards.
 
+## Assessment records
+
+| No. | Subject | Judgements | Folder |
+|---|---|---:|---|
+| 1 | Personal happiness (13 Oct 2026) | 222, timestamped | [`records/01_personal_happiness`](records/01_personal_happiness/) |
+
+Each record holds the exact question packets, the raw typed answers, the per-round results and a timestamped PDF, so every line of a definition can be traced to the judgements that chose it.
+
 ## License and author
 
 Text: CC BY 4.0 · Code: MIT.

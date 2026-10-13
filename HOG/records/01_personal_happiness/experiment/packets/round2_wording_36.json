@@ -1,0 +1,253 @@
+{
+ "schema": "jev-perspectives.v1",
+ "decision_id": "umodel-happiness-wording-round2-20261013",
+ "call_budget": 36,
+ "lenses": [
+  {
+   "id": "self_concordance",
+   "pillar": "form",
+   "angles": [
+    "base",
+    "order",
+    "facts",
+    "skeptic",
+    "advocate",
+    "blind"
+   ],
+   "brief": {
+    "decision_id": "happiness-form-self-r2-20261013",
+    "objective": "Assess whether the first condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "A short public definition of personal happiness has three lines (being oneself; supportive people; doing what one is good at and wants). This lens chooses only the wording of one line, among five candidates. The line must be short, accurate to the research and understandable to anyone.",
+    "evidence": [
+     {
+      "id": "F1",
+      "fact": "Self-determination theory: satisfaction of the need for autonomy predicted well-being in each of four countries (Belgium, China, USA, Peru) in a cross-cultural study.",
+      "n": 1051,
+      "source": "published literature (Chen et al. 2015), recalled, not re-verified in this session"
+     },
+     {
+      "id": "F2",
+      "fact": "Ryff's model of psychological well-being has six dimensions; two of them are autonomy and self-acceptance.",
+      "n": 6,
+      "source": "published literature (Ryff 1989), recalled"
+     },
+     {
+      "id": "F3",
+      "fact": "Goals pursued for autonomous, self-concordant reasons were attained more often and produced larger well-being gains in longitudinal student samples.",
+      "n": 3,
+      "source": "published literature (Sheldon and Elliot 1999), recalled; n = number of studies"
+     }
+    ],
+    "mechanism": "Acting from one's own values reduces internal conflict and makes effort self-sustaining, which supports lasting well-being.",
+    "alternatives": [
+     "Being who you are — living by your own values.",
+     "Being yourself — living by your own values.",
+     "Being true to yourself while you keep growing.",
+     "Knowing and accepting who you are, and living by your values.",
+     "Being free to be yourself and live by your values."
+    ],
+    "constraints": [
+     "The definition must stay at three conditions.",
+     "Wording must be short enough for a public slogan."
+    ],
+    "counterevidence": [
+     {
+      "id": "FC1",
+      "fact": "Self-discrepancy theory: a large gap between the actual self and the ideal self predicts dejection, so striving to be who you want to be can lower well-being when the ideal is out of reach."
+     },
+     {
+      "id": "FC2",
+      "fact": "A twin-study meta-analysis attributes about 32-36% of the variance in well-being to genetic factors, which are not under the person's control."
+     }
+    ],
+    "missing": [
+     "Whether readers understand the wording as authenticity or as reaching an ideal self."
+    ],
+    "threshold": "Prefer the candidate whose meaning is best supported by well-being research and that a general reader understands correctly; when two are within noise, prefer the shorter.",
+    "choices": {
+     "self_wording": {
+      "question": "Which wording of the first line is best supported by well-being research and clearest to a general reader?",
+      "options": {
+       "own_values": "Being who you are — living by your own values.",
+       "yourself": "Being yourself — living by your own values.",
+       "true_growing": "Being true to yourself while you keep growing.",
+       "know_accept": "Knowing and accepting who you are, and living by your values.",
+       "free_to_be": "Being free to be yourself and live by your values."
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {
+     "id": "without_f1",
+     "kind": "leave_one_out",
+     "evidence_id": "F1"
+    }
+   ]
+  },
+  {
+   "id": "supportive_environment",
+   "pillar": "position",
+   "angles": [
+    "base",
+    "order",
+    "facts",
+    "skeptic",
+    "advocate",
+    "blind"
+   ],
+   "brief": {
+    "decision_id": "happiness-position-environment-r2-20261013",
+    "objective": "Assess whether the second condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "A short public definition of personal happiness has three lines (being oneself; supportive people; doing what one is good at and wants). This lens chooses only the wording of one line, among five candidates. The line must be short, accurate to the research and understandable to anyone.",
+    "evidence": [
+     {
+      "id": "P1",
+      "fact": "In a study that followed its original cohort for more than 80 years, the quality of close relationships was the strongest predictor of later-life health and happiness.",
+      "n": 724,
+      "source": "Harvard Study of Adult Development, recalled"
+     },
+     {
+      "id": "P2",
+      "fact": "A meta-analysis of person-environment fit found person-organisation fit correlated with job satisfaction at about rho = .44 and person-job fit at about .56.",
+      "n": 172,
+      "source": "published literature (Kristof-Brown et al. 2005), recalled; n = number of studies"
+     },
+     {
+      "id": "P3",
+      "fact": "Six factors explain about three-quarters of the variance in national average life evaluations: GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity and low corruption.",
+      "n": 150,
+      "source": "World Happiness Report, recalled; n = approximate number of countries"
+     }
+    ],
+    "mechanism": "Support from people and institutions buffers stress and makes effort productive, so the same person flourishes more in a supportive environment.",
+    "alternatives": [
+     "Having close people and a community that support you.",
+     "Being loved and supported by close people and a community.",
+     "Belonging to people and a community who support you.",
+     "Having people you love who love you back.",
+     "Close relationships, a supportive community and a safe, free place to live."
+    ],
+    "constraints": [
+     "The definition must stay at three conditions.",
+     "Wording must be short enough for a public slogan."
+    ],
+    "counterevidence": [
+     {
+      "id": "PC1",
+      "fact": "Hedonic adaptation: lottery winners were not significantly happier than controls months later, so changes in circumstances often fade."
+     },
+     {
+      "id": "PC2",
+      "fact": "People in the same environment differ widely and stably in well-being, so the environment explains only part of individual happiness."
+     }
+    ],
+    "missing": [
+     "Whether 'supports you' is read as material support, relationships, or both."
+    ],
+    "threshold": "Prefer the candidate whose meaning is best supported by well-being research and that a general reader understands correctly; when two are within noise, prefer the shorter.",
+    "choices": {
+     "env_wording": {
+      "question": "Which wording of the second line is best supported by well-being research and clearest to a general reader?",
+      "options": {
+       "close_people": "Having close people and a community that support you.",
+       "loved": "Being loved and supported by close people and a community.",
+       "belonging": "Belonging to people and a community who support you.",
+       "love_back": "Having people you love who love you back.",
+       "plus_safe_free": "Close relationships, a supportive community and a safe, free place to live."
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {
+     "id": "without_p1",
+     "kind": "leave_one_out",
+     "evidence_id": "P1"
+    }
+   ]
+  },
+  {
+   "id": "talent_desire",
+   "pillar": "action",
+   "angles": [
+    "base",
+    "order",
+    "facts",
+    "skeptic",
+    "advocate",
+    "blind"
+   ],
+   "brief": {
+    "decision_id": "happiness-action-talent-r2-20261013",
+    "objective": "Assess whether the third condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "A short public definition of personal happiness has three lines (being oneself; supportive people; doing what one is good at and wants). This lens chooses only the wording of one line, among five candidates. The line must be short, accurate to the research and understandable to anyone.",
+    "evidence": [
+     {
+      "id": "A1",
+      "fact": "Flow research using experience sampling: optimal experience arises when the challenge of an activity matches the person's skill, reported across many countries and activities.",
+      "n": 1,
+      "source": "published literature (Csikszentmihalyi), recalled; n = research programme"
+     },
+     {
+      "id": "A2",
+      "fact": "In a randomised online trial, using one's signature strengths in a new way for one week increased happiness and reduced depressive symptoms for up to six months.",
+      "n": 577,
+      "source": "published literature (Seligman et al. 2005), recalled"
+     },
+     {
+      "id": "A3",
+      "fact": "In a long national panel, becoming unemployed lowered life satisfaction substantially and people did not fully return to their earlier level over the following years.",
+      "n": 24000,
+      "source": "German Socio-Economic Panel (Lucas et al. 2004), recalled"
+     }
+    ],
+    "mechanism": "Activity that uses one's talents and is wanted for its own sake produces engagement, competence and a sense of progress.",
+    "alternatives": [
+     "Doing what you have the talent and desire to do.",
+     "Doing meaningful work that uses your talents.",
+     "Doing what you love and are good at, in a way that helps others.",
+     "Using your talents for something that matters to you and to others.",
+     "Doing what you are good at and care about."
+    ],
+    "constraints": [
+     "The definition must stay at three conditions.",
+     "Wording must be short enough for a public slogan."
+    ],
+    "counterevidence": [
+     {
+      "id": "AC1",
+      "fact": "Obsessive passion for an activity is associated with burnout, conflict and lower well-being (dualistic model of passion)."
+     },
+     {
+      "id": "AC2",
+      "fact": "Job satisfaction correlates only moderately with life satisfaction (meta-analytic rho about .44), so many people are satisfied with life without work that matches their talents."
+     }
+    ],
+    "missing": [
+     "Whether 'doing' includes unpaid activity, family care and contribution to others."
+    ],
+    "threshold": "Prefer the candidate whose meaning is best supported by well-being research and that a general reader understands correctly; when two are within noise, prefer the shorter.",
+    "choices": {
+     "action_wording": {
+      "question": "Which wording of the third line is best supported by well-being research and clearest to a general reader?",
+      "options": {
+       "talent_desire": "Doing what you have the talent and desire to do.",
+       "meaningful": "Doing meaningful work that uses your talents.",
+       "love_good_help": "Doing what you love and are good at, in a way that helps others.",
+       "matters": "Using your talents for something that matters to you and to others.",
+       "good_care": "Doing what you are good at and care about."
+      }
+     }
+    }
+   },
+   "scenarios": [
+    {
+     "id": "without_a2",
+     "kind": "leave_one_out",
+     "evidence_id": "A2"
+    }
+   ]
+  }
+ ]
+}

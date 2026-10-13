@@ -1,0 +1,178 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;font-size:14px}@page{size:A4;margin:12mm}</style>
+<title>Personal Happiness Record</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a single archival record sheet — header block, the definition as the exhibit, a measured result table drawn to scale, limits, and a stamp footer. */
+:root {
+  --paper: #f6f7f9;
+  --sheet: #ffffff;
+  --ink: #1b2330;
+  --muted: #5a6475;
+  --rule: #d5dae2;
+  --accent: #2f4f8a;
+  --seal: #8a5a1f;
+  --band: #e9edf4;
+  --ok: #2e7d4f;
+  --lean: #a46a12;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  --font-data: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12161d; --sheet: #1a2029; --ink: #e6e9ef; --muted: #a3acba; --rule: #333c4a;
+    --accent: #8fb0ea; --seal: #d9a660; --band: #232b37; --ok: #6cc795; --lean: #e3b05a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12161d; --sheet: #1a2029; --ink: #e6e9ef; --muted: #a3acba; --rule: #333c4a;
+  --accent: #8fb0ea; --seal: #d9a660; --band: #232b37; --ok: #6cc795; --lean: #e3b05a; color-scheme: dark;
+}
+body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; padding-inline: 16px; padding-block: 32px; }
+.sheet { max-width: 760px; margin: 0 auto; background: var(--sheet); border: 1px solid var(--rule); padding: clamp(20px, 5vw, 48px); display: grid; gap: 32px; }
+.head { display: grid; gap: 6px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
+.eyebrow { font-family: var(--font-data); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 5vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px 24px; margin-top: 10px; }
+.meta div { display: grid; gap: 2px; min-width: 0; }
+.meta dt { font-family: var(--font-data); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.meta dd { margin: 0; font-weight: 600; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 20px; margin: 0 0 12px; text-wrap: balance; }
+.exhibit { background: var(--band); padding: 22px 24px; display: grid; gap: 14px; }
+.exhibit ol { margin: 0; padding-left: 1.4em; display: grid; gap: 10px; font-family: var(--font-display); font-size: clamp(18px, 3.2vw, 22px); line-height: 1.35; }
+.exhibit .bg { border-top: 1px solid var(--rule); padding-top: 12px; color: var(--muted); font-size: 15px; }
+.exhibit .bg ol { font-size: 16px; gap: 4px; }
+.pillar { font-family: var(--font-data); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); display: block; }
+p { margin: 0; max-width: 65ch; }
+.stack { display: grid; gap: 12px; }
+ul.method { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 65ch; }
+.results { display: grid; gap: 18px; }
+.row { display: grid; gap: 6px; }
+.row-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.row-name { font-weight: 600; min-width: 0; }
+.chip { font-family: var(--font-data); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border: 1px solid currentColor; }
+.chip.ok { color: var(--ok); }
+.chip.lean { color: var(--lean); }
+.bar { position: relative; height: 22px; background: var(--band); }
+.fill { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+.thr { position: absolute; top: -4px; bottom: -4px; left: 60%; width: 2px; background: var(--ink); }
+.val { font-family: var(--font-data); font-variant-numeric: tabular-nums; font-size: 14px; color: var(--muted); }
+.scale { position: relative; height: 16px; font-family: var(--font-data); font-size: 11px; color: var(--muted); }
+.scale span { position: absolute; transform: translateX(-50%); }
+.scale span:first-child { transform: none; }
+.scale span:last-child { transform: translateX(-100%); }
+.note { font-size: 14px; color: var(--muted); }
+.claims { width: 100%; border-collapse: collapse; font-size: 15px; }
+.tablewrap { overflow-x: auto; }
+.claims th, .claims td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.claims th { font-family: var(--font-data); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+.claims td.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.stamp { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; border-top: 2px solid var(--ink); padding-top: 20px; }
+.seal { width: 84px; height: 84px; border: 2px solid var(--seal); border-radius: 50%; display: grid; place-items: center; text-align: center; color: var(--seal); font-family: var(--font-data); font-size: 10px; letter-spacing: .06em; line-height: 1.3; text-transform: uppercase; }
+.stamp p { font-size: 14px; }
+.batches { font-family: var(--font-data); font-size: 12px; color: var(--muted); word-break: break-all; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
+@media (max-width: 480px) { .stamp { grid-template-columns: 1fr; } }
+@media print { body { background: #fff; padding: 0; } .sheet { border: 0; } }
+</style></head><body>
+
+<main class="sheet">
+  <header class="head">
+    <span class="eyebrow">The Hand of God · Assessment Record No. 1</span>
+    <h1>Personal Happiness by U-Model.org</h1>
+    <p class="sub">"The Hand of God" is a brand name for the U-Model assessment protocol. It has no religious meaning.</p>
+    <dl class="meta">
+      <div><dt>Judge</dt><dd>TypeSafe Jev · jev-1.13</dd></div>
+      <div><dt>Date</dt><dd>13 October 2026</dd></div>
+      <div><dt>Typed judgements</dt><dd>222 in 5 rounds</dd></div>
+      <div><dt>Protocol</dt><dd>Lady Galaxy Protocol + HOG</dd></div>
+    </dl>
+  </header>
+
+  <section class="exhibit" aria-labelledby="def">
+    <h2 id="def">The definition</h2>
+    <ol>
+      <li><span class="pillar">Form · being</span>Being yourself while respecting the freedom and dignity of others.</li>
+      <li><span class="pillar">Position · environment</span>Having close people and a community that support you.</li>
+      <li><span class="pillar">Action · doing</span>Doing what you are good at and care about.</li>
+    </ol>
+    <div class="bg" lang="bg">
+      <ol>
+        <li>Да бъдеш себе си, уважавайки свободата и достойнството на другите.</li>
+        <li>Да имаш близки хора и общност, които те подкрепят.</li>
+        <li>Да правиш това, в което си добър и което ти е важно.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="stack" aria-labelledby="method">
+    <h2 id="method">How it was judged</h2>
+    <ul class="method">
+      <li>Each line was judged on its own, against four or five rival wordings.</li>
+      <li>Every question was asked from six angles: plain, reordered, facts only, sceptic, advocate, and with the options' names hidden.</li>
+      <li>It was asked again with the strongest piece of evidence removed, and under changed conditions: a collectivist culture, poverty, poor health, old age, isolation.</li>
+      <li>The evidence came from published well-being research: self-determination theory, the Harvard Study of Adult Development, PERMA, flow, and studies of strengths and kindness.</li>
+      <li>The rule of the protocol: what can be computed is never asked, and what is asked is never permission.</li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="res">
+    <h2 id="res">Results</h2>
+    <p class="note">Bars show the probability Jev gave the winning wording against its rivals. The black mark at 0.60 is the protocol's threshold for a firm answer.</p>
+    <div class="results">
+      <div class="row">
+        <div class="row-top"><span class="row-name">Line 2 · close people and a community</span><span class="chip ok">Robust</span></div>
+        <div class="bar" role="img" aria-label="0.79 of 1"><div class="fill" style="width:79%"></div><div class="thr"></div></div>
+        <span class="val">0.79 · chosen by 6 of 6 angles in every scenario</span>
+      </div>
+      <div class="row">
+        <div class="row-top"><span class="row-name">Line 3 · what you are good at and care about</span><span class="chip ok">Robust</span></div>
+        <div class="bar" role="img" aria-label="0.83 of 1"><div class="fill" style="width:83%"></div><div class="thr"></div></div>
+        <span class="val">0.83 · chosen by 6 of 6 angles in every scenario</span>
+      </div>
+      <div class="row">
+        <div class="row-top"><span class="row-name">Line 1 · being yourself, respecting others</span><span class="chip lean">Prevailing</span></div>
+        <div class="bar" role="img" aria-label="0.46 of 1"><div class="fill" style="width:46%"></div><div class="thr"></div></div>
+        <span class="val">0.46 · first under the requirement "accurate and acceptable for universal endorsement"; tied in 2 of 4 scenarios</span>
+      </div>
+      <div class="scale" aria-hidden="true"><span style="left:0">0</span><span style="left:60%">0.60</span><span style="left:100%">1</span></div>
+    </div>
+  </section>
+
+  <section class="stack" aria-labelledby="moral">
+    <h2 id="moral">Why line 1 carries a moral clause</h2>
+    <p>Judged for descriptive accuracy alone, Jev preferred "Accepting yourself and living by your own values" (0.89). The author added a moral requirement on purpose: a definition of happiness that claims universal recognition must not advertise happiness for people who harm others. Under that requirement Jev placed respect for the freedom and dignity of others first, in line with Article 1 of the Universal Declaration of Human Rights. It gave the plain prohibition "without harming others" 0.03, because harm is an ambiguous word.</p>
+  </section>
+
+  <section class="stack" aria-labelledby="limits">
+    <h2 id="limits">What this record does not show</h2>
+    <div class="tablewrap">
+      <table class="claims">
+        <thead><tr><th>Claim</th><th>Jev · claim / opposite</th><th>Reading</th></tr></thead>
+        <tbody>
+          <tr><td>The three lines cover the main causes of happiness</td><td class="num">0.28 / 0.37</td><td>Not enough evidence</td></tr>
+          <tr><td>Lacking any one line rules out lasting happiness</td><td class="num">0.30 / 0.38</td><td>Not enough evidence</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The three lines are offered as the three supports of happiness, not as a proven formula. The research facts in the questions were summarised from the literature and were not re-checked for this record. 222 judgements from one model are not 222 independent proofs.</p>
+  </section>
+
+  <footer class="stamp">
+    <div class="seal" aria-hidden="true">Open<br>Time<br>Stamps<br>13·10·26</div>
+    <div class="stack">
+      <p>All 222 judgements were timestamped with OpenTimestamps on 13 October 2026, 09:10–09:21 UTC, and anchored in Bitcoin. Only hashes left the machine. Proofs are available for verification on request.</p>
+      <p class="batches">Batches: 20261013T091028Z-282a45 · 20261013T091508Z-7f8566 · 20261013T091642Z-c88a84 · 20261013T091907Z-abcb20 · 20261013T092107Z-96dc70</p>
+      <div class="links">
+        <a href="https://osf.io/74xgr/files/wqhvd">HOG appendix (PDF, OSF)</a>
+        <a href="https://github.com/UniversalModel/core/tree/main/HOG">Code (GitHub)</a>
+      </div>
+      <p class="note">Petar Nikolov · independent researcher, Sofia · ORCID 0009-0001-8669-2276</p>
+    </div>
+  </footer>
+</main>
+</body></html>

@@ -1,0 +1,122 @@
+{
+ "schema": "jev-perspectives.v1",
+ "decision_id": "umodel-happiness-line1-round4-20261013",
+ "call_budget": 24,
+ "lenses": [
+  {
+   "id": "self_concordance",
+   "pillar": "form",
+   "angles": [
+    "base",
+    "order",
+    "facts",
+    "skeptic",
+    "advocate",
+    "blind"
+   ],
+   "brief": {
+    "decision_id": "happiness-form-self-r4-20261013",
+    "objective": "Assess whether the first condition of a three-part definition of personal happiness is supported by well-being research and how it is best worded.",
+    "decision": "A short public definition of personal happiness has three lines (being oneself; supportive people; doing what one is good at and wants). This lens chooses only the wording of one line, among five candidates. The line must be short, accurate to the research and understandable to anyone.",
+    "evidence": [
+     {
+      "id": "F1",
+      "fact": "Self-determination theory: satisfaction of the need for autonomy predicted well-being in each of four countries (Belgium, China, USA, Peru) in a cross-cultural study.",
+      "n": 1051,
+      "source": "published literature (Chen et al. 2015), recalled, not re-verified in this session"
+     },
+     {
+      "id": "F2",
+      "fact": "Ryff's model of psychological well-being has six dimensions; two of them are autonomy and self-acceptance.",
+      "n": 6,
+      "source": "published literature (Ryff 1989), recalled"
+     },
+     {
+      "id": "F3",
+      "fact": "Goals pursued for autonomous, self-concordant reasons were attained more often and produced larger well-being gains in longitudinal student samples.",
+      "n": 3,
+      "source": "published literature (Sheldon and Elliot 1999), recalled; n = number of studies"
+     },
+     {
+      "id": "F4",
+      "fact": "In an experiment, people randomly assigned to spend a small sum on others reported higher happiness that evening than people assigned to spend it on themselves.",
+      "n": 46,
+      "source": "published literature (Dunn, Aknin and Norton 2008), recalled"
+     },
+     {
+      "id": "F5",
+      "fact": "A meta-analysis of kindness interventions found that acts of kindness raise the actor's own well-being by a small-to-moderate amount (about d = 0.28).",
+      "n": 27,
+      "source": "published literature (Curry et al. 2018), recalled; n = number of studies"
+     }
+    ],
+    "mechanism": "Acting from one's own values reduces internal conflict and makes effort self-sustaining, which supports lasting well-being.",
+    "alternatives": [
+     "Accepting yourself and living by your own values.",
+     "Accepting yourself and living by values that respect others.",
+     "Being yourself without harming others.",
+     "Accepting yourself and living by your values, in harmony with others.",
+     "Living by your own values while respecting the rights of others."
+    ],
+    "constraints": [
+     "The definition must stay at three conditions.",
+     "Wording must be short enough for a public slogan."
+    ],
+    "counterevidence": [
+     {
+      "id": "FC1",
+      "fact": "Self-discrepancy theory: a large gap between the actual self and the ideal self predicts dejection, so striving to be who you want to be can lower well-being when the ideal is out of reach."
+     },
+     {
+      "id": "FC2",
+      "fact": "A twin-study meta-analysis attributes about 32-36% of the variance in well-being to genetic factors, which are not under the person's control."
+     },
+     {
+      "id": "FC3",
+      "fact": "A clause about others makes the line longer and may read as moralising rather than as a description of happiness."
+     }
+    ],
+    "missing": [
+     "Whether readers understand the wording as authenticity or as reaching an ideal self."
+    ],
+    "threshold": "Prefer the candidate whose meaning is best supported by well-being research and that a general reader understands correctly. Length is not a criterion.",
+    "choices": {
+     "self_wording": {
+      "question": "Which wording of the first line is best supported by well-being research and clearest to a general reader?",
+      "options": {
+       "accept_own": "Accepting yourself and living by your own values.",
+       "accept_respect": "Accepting yourself and living by values that respect others.",
+       "yourself_no_harm": "Being yourself without harming others.",
+       "accept_harmony": "Accepting yourself and living by your values, in harmony with others.",
+       "own_values_rights": "Living by your own values while respecting the rights of others."
+      }
+     }
+    },
+    "claims": {
+     "needs_regard_for_others": "The first line needs an explicit regard for others to be an accurate description of personal happiness."
+    }
+   },
+   "scenarios": [
+    {
+     "id": "without_f4",
+     "kind": "leave_one_out",
+     "evidence_id": "F4"
+    },
+    {
+     "id": "without_f5",
+     "kind": "leave_one_out",
+     "evidence_id": "F5"
+    },
+    {
+     "id": "collectivist",
+     "kind": "assumption",
+     "parameter": "individualism_index_of_society",
+     "baseline": 70,
+     "value": 20,
+     "unit": "Hofstede individualism index (0-100)",
+     "rationale": "Hypothetical collectivist culture; not a new observation."
+    }
+   ]
+  }
+ ]
+}

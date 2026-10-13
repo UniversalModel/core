@@ -1,0 +1,663 @@
+{
+  "schema": "jev-perspectives-result.v1",
+  "decision_id": "umodel-happiness-line1-round4-20261013",
+  "spec_sha256": "7ccb4b1d41c225b5a172141cf96861d63b13ab99167620626e859cddd8accaf3",
+  "planned_calls": 24,
+  "completed_calls": 24,
+  "lenses": {
+    "self_concordance": {
+      "pillar": "form",
+      "scenarios": {
+        "baseline": {
+          "scenario_kind": "baseline",
+          "complete": true,
+          "panel": {
+            "needs_regard_for_others": {
+              "type": "noul",
+              "per_angle": {
+                "base": {
+                  "p": 0.23,
+                  "m": 0.23,
+                  "verdict": "insufficient"
+                },
+                "order": {
+                  "p": 0.2,
+                  "m": 0.2,
+                  "verdict": "insufficient"
+                },
+                "facts": {
+                  "p": 0.22,
+                  "m": 0.23,
+                  "verdict": "insufficient"
+                },
+                "skeptic": {
+                  "p": 0.24,
+                  "m": 0.25,
+                  "verdict": "insufficient"
+                },
+                "advocate": {
+                  "p": 0.23,
+                  "m": 0.24,
+                  "verdict": "insufficient"
+                },
+                "blind": {
+                  "p": 0.22,
+                  "m": 0.21,
+                  "verdict": "insufficient"
+                }
+              },
+              "median_p": 0.225,
+              "median_mirror": 0.23,
+              "verdict": "insufficient",
+              "agreement": 1.0,
+              "range_p": 0.04,
+              "framing_gap": -0.01
+            },
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accept_own",
+                  "conf": 0.87
+                },
+                "order": {
+                  "pick": "accept_own",
+                  "conf": 0.9
+                },
+                "facts": {
+                  "pick": "accept_own",
+                  "conf": 0.86
+                },
+                "skeptic": {
+                  "pick": "accept_own",
+                  "conf": 0.84
+                },
+                "advocate": {
+                  "pick": "accept_own",
+                  "conf": 0.86
+                },
+                "blind": {
+                  "pick": "accept_own",
+                  "conf": 0.87
+                }
+              },
+              "panel_pick": "accept_own",
+              "majority_pick": "accept_own",
+              "consensus": 1.0,
+              "median_probs": {
+                "accept_own": 0.885,
+                "accept_harmony": 0.05,
+                "accept_respect": 0.035,
+                "own_values_rights": 0.02,
+                "yourself_no_harm": 0.01,
+                "wait_measure": 0.0
+              },
+              "margin": 0.835,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.865
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.3,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091857-4f76ba4c34ed-8cc2c4",
+            "20261013T091857-480dfb576e45-860d83",
+            "20261013T091857-8b7d40e26686-b21612",
+            "20261013T091858-1266f5c271f3-0277cc",
+            "20261013T091858-511e4caf5756-ca8fc9",
+            "20261013T091858-5f35174abc8b-05f414"
+          ]
+        },
+        "without_f4": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "needs_regard_for_others": {
+              "type": "noul",
+              "per_angle": {
+                "base": {
+                  "p": 0.18,
+                  "m": 0.18,
+                  "verdict": "insufficient"
+                },
+                "order": {
+                  "p": 0.18,
+                  "m": 0.18,
+                  "verdict": "insufficient"
+                },
+                "facts": {
+                  "p": 0.19,
+                  "m": 0.2,
+                  "verdict": "insufficient"
+                },
+                "skeptic": {
+                  "p": 0.2,
+                  "m": 0.19,
+                  "verdict": "insufficient"
+                },
+                "advocate": {
+                  "p": 0.2,
+                  "m": 0.19,
+                  "verdict": "insufficient"
+                },
+                "blind": {
+                  "p": 0.18,
+                  "m": 0.18,
+                  "verdict": "insufficient"
+                }
+              },
+              "median_p": 0.185,
+              "median_mirror": 0.185,
+              "verdict": "insufficient",
+              "agreement": 1.0,
+              "range_p": 0.02,
+              "framing_gap": 0.0
+            },
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accept_own",
+                  "conf": 0.93
+                },
+                "order": {
+                  "pick": "accept_own",
+                  "conf": 0.94
+                },
+                "facts": {
+                  "pick": "accept_own",
+                  "conf": 0.92
+                },
+                "skeptic": {
+                  "pick": "accept_own",
+                  "conf": 0.92
+                },
+                "advocate": {
+                  "pick": "accept_own",
+                  "conf": 0.94
+                },
+                "blind": {
+                  "pick": "accept_own",
+                  "conf": 0.94
+                }
+              },
+              "panel_pick": "accept_own",
+              "majority_pick": "accept_own",
+              "consensus": 1.0,
+              "median_probs": {
+                "accept_own": 0.945,
+                "accept_harmony": 0.025,
+                "accept_respect": 0.015,
+                "yourself_no_harm": 0.01,
+                "own_values_rights": 0.01,
+                "wait_measure": 0.0
+              },
+              "margin": 0.92,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.935
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091859-172b84577210-90dbeb",
+            "20261013T091859-590f55956fff-b08c10",
+            "20261013T091859-0c2be2b662ff-42cbbd",
+            "20261013T091859-ffbdfb474dae-15d141",
+            "20261013T091900-aa411239324f-087652",
+            "20261013T091900-d85a0be6ec23-b54bd9"
+          ]
+        },
+        "without_f5": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "needs_regard_for_others": {
+              "type": "noul",
+              "per_angle": {
+                "base": {
+                  "p": 0.21,
+                  "m": 0.21,
+                  "verdict": "insufficient"
+                },
+                "order": {
+                  "p": 0.21,
+                  "m": 0.2,
+                  "verdict": "insufficient"
+                },
+                "facts": {
+                  "p": 0.22,
+                  "m": 0.24,
+                  "verdict": "insufficient"
+                },
+                "skeptic": {
+                  "p": 0.23,
+                  "m": 0.23,
+                  "verdict": "insufficient"
+                },
+                "advocate": {
+                  "p": 0.22,
+                  "m": 0.23,
+                  "verdict": "insufficient"
+                },
+                "blind": {
+                  "p": 0.21,
+                  "m": 0.21,
+                  "verdict": "insufficient"
+                }
+              },
+              "median_p": 0.215,
+              "median_mirror": 0.22,
+              "verdict": "insufficient",
+              "agreement": 1.0,
+              "range_p": 0.02,
+              "framing_gap": -0.01
+            },
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accept_own",
+                  "conf": 0.94
+                },
+                "order": {
+                  "pick": "accept_own",
+                  "conf": 0.9
+                },
+                "facts": {
+                  "pick": "accept_own",
+                  "conf": 0.88
+                },
+                "skeptic": {
+                  "pick": "accept_own",
+                  "conf": 0.92
+                },
+                "advocate": {
+                  "pick": "accept_own",
+                  "conf": 0.9
+                },
+                "blind": {
+                  "pick": "accept_own",
+                  "conf": 0.92
+                }
+              },
+              "panel_pick": "accept_own",
+              "majority_pick": "accept_own",
+              "consensus": 1.0,
+              "median_probs": {
+                "accept_own": 0.925,
+                "accept_harmony": 0.035,
+                "own_values_rights": 0.02,
+                "accept_respect": 0.015,
+                "yourself_no_harm": 0.01,
+                "wait_measure": 0.0
+              },
+              "margin": 0.89,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.91
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.3,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.15,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091900-eeff6f426b91-754c3a",
+            "20261013T091900-499fc55147aa-f9753b",
+            "20261013T091901-5929f5297298-33ad38",
+            "20261013T091901-ed06c2ce071b-4307ba",
+            "20261013T091901-d29117c4b98d-1e89fd",
+            "20261013T091902-8fbfe1da8f6f-6c1529"
+          ]
+        },
+        "collectivist": {
+          "scenario_kind": "assumption",
+          "complete": true,
+          "panel": {
+            "needs_regard_for_others": {
+              "type": "noul",
+              "per_angle": {
+                "base": {
+                  "p": 0.23,
+                  "m": 0.22,
+                  "verdict": "insufficient"
+                },
+                "order": {
+                  "p": 0.23,
+                  "m": 0.2,
+                  "verdict": "insufficient"
+                },
+                "facts": {
+                  "p": 0.23,
+                  "m": 0.24,
+                  "verdict": "insufficient"
+                },
+                "skeptic": {
+                  "p": 0.25,
+                  "m": 0.25,
+                  "verdict": "insufficient"
+                },
+                "advocate": {
+                  "p": 0.24,
+                  "m": 0.24,
+                  "verdict": "insufficient"
+                },
+                "blind": {
+                  "p": 0.23,
+                  "m": 0.22,
+                  "verdict": "insufficient"
+                }
+              },
+              "median_p": 0.23,
+              "median_mirror": 0.23,
+              "verdict": "insufficient",
+              "agreement": 1.0,
+              "range_p": 0.02,
+              "framing_gap": -0.01
+            },
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accept_own",
+                  "conf": 0.87
+                },
+                "order": {
+                  "pick": "accept_own",
+                  "conf": 0.83
+                },
+                "facts": {
+                  "pick": "accept_own",
+                  "conf": 0.75
+                },
+                "skeptic": {
+                  "pick": "accept_own",
+                  "conf": 0.74
+                },
+                "advocate": {
+                  "pick": "accept_own",
+                  "conf": 0.84
+                },
+                "blind": {
+                  "pick": "accept_own",
+                  "conf": 0.83
+                }
+              },
+              "panel_pick": "accept_own",
+              "majority_pick": "accept_own",
+              "consensus": 1.0,
+              "median_probs": {
+                "accept_own": 0.86,
+                "accept_harmony": 0.08,
+                "accept_respect": 0.04,
+                "own_values_rights": 0.02,
+                "yourself_no_harm": 0.015,
+                "wait_measure": 0.0
+              },
+              "margin": 0.78,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.83
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.55,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.5,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.15,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091902-4a47e19236bf-72054d",
+            "20261013T091902-c19a5350033e-c9754c",
+            "20261013T091903-4c813dc416ac-4d7edf",
+            "20261013T091903-e86503d7f474-93da6f",
+            "20261013T091903-601b2292c063-96d242",
+            "20261013T091903-ad5c4c1cba0f-65380c"
+          ]
+        }
+      },
+      "dependencies": [],
+      "probability_shifts_descriptive_not_significance": [
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "yourself_no_harm",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "own_values_rights",
+          "delta": -0.01
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "accept_own",
+          "delta": 0.06
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "accept_respect",
+          "delta": -0.02
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f4",
+          "option": "accept_harmony",
+          "delta": -0.025
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "yourself_no_harm",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "own_values_rights",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "accept_own",
+          "delta": 0.04
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "accept_respect",
+          "delta": -0.02
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f5",
+          "option": "accept_harmony",
+          "delta": -0.015
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "yourself_no_harm",
+          "delta": 0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "own_values_rights",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "accept_own",
+          "delta": -0.025
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "accept_respect",
+          "delta": 0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "accept_harmony",
+          "delta": 0.03
+        }
+      ],
+      "synthesis": "NO_DETECTED_SCENARIO_FLIP",
+      "interpretation": "Descriptive opinion sensitivity, not independent trials, empirical confidence or permission. Inspect unresolved mirrors and framing even without a scenario flip."
+    }
+  },
+  "timing": {
+    "n": 24,
+    "sum_request_seconds": 7.329791,
+    "median_request_seconds": 0.277505
+  },
+  "global_model_judgment_requested": false,
+  "authorizes_execution": false,
+  "next": "Agent/owner synthesizes evidence, contradictions and conditional assumptions. Reopen only affected questions after new evidence; do not repeat to obtain agreement."
+}

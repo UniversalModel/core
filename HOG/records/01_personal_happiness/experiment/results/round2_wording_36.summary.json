@@ -1,0 +1,701 @@
+{
+  "schema": "jev-perspectives-result.v1",
+  "decision_id": "umodel-happiness-wording-round2-20261013",
+  "spec_sha256": "926856f99543671632689fd969f783c93957fbd6c101fbbc600dbe0914681ab9",
+  "planned_calls": 36,
+  "completed_calls": 36,
+  "lenses": {
+    "self_concordance": {
+      "pillar": "form",
+      "scenarios": {
+        "baseline": {
+          "scenario_kind": "baseline",
+          "complete": true,
+          "panel": {
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "yourself",
+                  "conf": 0.39
+                },
+                "order": {
+                  "pick": "yourself",
+                  "conf": 0.42
+                },
+                "facts": {
+                  "pick": "yourself",
+                  "conf": 0.32
+                },
+                "skeptic": {
+                  "pick": "yourself",
+                  "conf": 0.39
+                },
+                "advocate": {
+                  "pick": "yourself",
+                  "conf": 0.36
+                },
+                "blind": {
+                  "pick": "yourself",
+                  "conf": 0.3
+                }
+              },
+              "panel_pick": "yourself",
+              "majority_pick": "yourself",
+              "consensus": 1.0,
+              "median_probs": {
+                "yourself": 0.48,
+                "know_accept": 0.255,
+                "own_values": 0.215,
+                "true_growing": 0.02,
+                "free_to_be": 0.02,
+                "wait_measure": 0.0
+              },
+              "margin": 0.225,
+              "verdict": "prevailing",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.375
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.3,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091455-979f47747714-fbbfd4",
+            "20261013T091455-739c1c8667ab-1cb18a",
+            "20261013T091455-7c125e1bea5c-0b8ae3",
+            "20261013T091455-9d0affe44b89-97c730",
+            "20261013T091456-a5782408931a-866cf5",
+            "20261013T091456-e6f2524a2125-1b8896"
+          ]
+        },
+        "without_f1": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "yourself",
+                  "conf": 0.33
+                },
+                "order": {
+                  "pick": "yourself",
+                  "conf": 0.42
+                },
+                "facts": {
+                  "pick": "yourself",
+                  "conf": 0.27
+                },
+                "skeptic": {
+                  "pick": "yourself",
+                  "conf": 0.34
+                },
+                "advocate": {
+                  "pick": "yourself",
+                  "conf": 0.28
+                },
+                "blind": {
+                  "pick": "know_accept",
+                  "conf": 0.39
+                }
+              },
+              "panel_pick": "yourself",
+              "majority_pick": "yourself",
+              "consensus": 0.83,
+              "median_probs": {
+                "yourself": 0.42,
+                "know_accept": 0.285,
+                "own_values": 0.25,
+                "true_growing": 0.01,
+                "free_to_be": 0.0,
+                "wait_measure": 0.0
+              },
+              "margin": 0.135,
+              "verdict": "prevailing",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.335
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 1.4,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 1.0,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.85,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.25,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091456-1889fa9d07a7-304b57",
+            "20261013T091457-1889fa9d07a7-307671",
+            "20261013T091457-8ac1d660db3d-c327cf",
+            "20261013T091457-e25fc6aea1de-6f91b6",
+            "20261013T091457-e58babb30ed6-5c8c20",
+            "20261013T091458-6b4111f983fb-1b57aa"
+          ]
+        }
+      },
+      "dependencies": [],
+      "probability_shifts_descriptive_not_significance": [
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "free_to_be",
+          "delta": -0.02
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "yourself",
+          "delta": -0.06
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "own_values",
+          "delta": 0.035
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "true_growing",
+          "delta": -0.01
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "know_accept",
+          "delta": 0.03
+        }
+      ],
+      "synthesis": "NO_DETECTED_SCENARIO_FLIP",
+      "interpretation": "Descriptive opinion sensitivity, not independent trials, empirical confidence or permission. Inspect unresolved mirrors and framing even without a scenario flip."
+    },
+    "supportive_environment": {
+      "pillar": "position",
+      "scenarios": {
+        "baseline": {
+          "scenario_kind": "baseline",
+          "complete": true,
+          "panel": {
+            "env_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "close_people",
+                  "conf": 0.74
+                },
+                "order": {
+                  "pick": "close_people",
+                  "conf": 0.57
+                },
+                "facts": {
+                  "pick": "close_people",
+                  "conf": 0.77
+                },
+                "skeptic": {
+                  "pick": "close_people",
+                  "conf": 0.78
+                },
+                "advocate": {
+                  "pick": "close_people",
+                  "conf": 0.75
+                },
+                "blind": {
+                  "pick": "close_people",
+                  "conf": 0.6
+                }
+              },
+              "panel_pick": "close_people",
+              "majority_pick": "close_people",
+              "consensus": 1.0,
+              "median_probs": {
+                "close_people": 0.785,
+                "loved": 0.11,
+                "belonging": 0.065,
+                "love_back": 0.02,
+                "plus_safe_free": 0.015,
+                "wait_measure": 0.0
+              },
+              "margin": 0.675,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.745
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.75,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.55,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091458-b3d758d9113e-575079",
+            "20261013T091458-476385593d4e-48c541",
+            "20261013T091458-81d1f75ea1d5-663af1",
+            "20261013T091459-e4aa2da32d64-554fd5",
+            "20261013T091459-fb0797d76f3d-a34011",
+            "20261013T091459-7008b4e63ff5-3f5196"
+          ]
+        },
+        "without_p1": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "env_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "close_people",
+                  "conf": 0.74
+                },
+                "order": {
+                  "pick": "close_people",
+                  "conf": 0.64
+                },
+                "facts": {
+                  "pick": "close_people",
+                  "conf": 0.77
+                },
+                "skeptic": {
+                  "pick": "close_people",
+                  "conf": 0.75
+                },
+                "advocate": {
+                  "pick": "close_people",
+                  "conf": 0.74
+                },
+                "blind": {
+                  "pick": "close_people",
+                  "conf": 0.63
+                }
+              },
+              "panel_pick": "close_people",
+              "majority_pick": "close_people",
+              "consensus": 1.0,
+              "median_probs": {
+                "close_people": 0.78,
+                "loved": 0.095,
+                "belonging": 0.09,
+                "plus_safe_free": 0.02,
+                "love_back": 0.015,
+                "wait_measure": 0.0
+              },
+              "margin": 0.685,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.74
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.45,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.4,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.15,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.15,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.05,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091500-d065ab34f312-391346",
+            "20261013T091500-d065ab34f312-c58869",
+            "20261013T091500-9970a5fc0820-3f4bf2",
+            "20261013T091501-3e0fd73b84d6-7b97d1",
+            "20261013T091501-a4cb31c92128-5af469",
+            "20261013T091501-891eaaf3ffe7-b0d403"
+          ]
+        }
+      },
+      "dependencies": [],
+      "probability_shifts_descriptive_not_significance": [
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "love_back",
+          "delta": -0.005
+        },
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "plus_safe_free",
+          "delta": 0.005
+        },
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "loved",
+          "delta": -0.015
+        },
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "belonging",
+          "delta": 0.025
+        },
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "env_wording",
+          "scenario": "without_p1",
+          "option": "close_people",
+          "delta": -0.005
+        }
+      ],
+      "synthesis": "NO_DETECTED_SCENARIO_FLIP",
+      "interpretation": "Descriptive opinion sensitivity, not independent trials, empirical confidence or permission. Inspect unresolved mirrors and framing even without a scenario flip."
+    },
+    "talent_desire": {
+      "pillar": "action",
+      "scenarios": {
+        "baseline": {
+          "scenario_kind": "baseline",
+          "complete": true,
+          "panel": {
+            "action_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "good_care",
+                  "conf": 0.8
+                },
+                "order": {
+                  "pick": "good_care",
+                  "conf": 0.78
+                },
+                "facts": {
+                  "pick": "good_care",
+                  "conf": 0.83
+                },
+                "skeptic": {
+                  "pick": "good_care",
+                  "conf": 0.77
+                },
+                "advocate": {
+                  "pick": "good_care",
+                  "conf": 0.81
+                },
+                "blind": {
+                  "pick": "good_care",
+                  "conf": 0.86
+                }
+              },
+              "panel_pick": "good_care",
+              "majority_pick": "good_care",
+              "consensus": 1.0,
+              "median_probs": {
+                "good_care": 0.835,
+                "talent_desire": 0.16,
+                "matters": 0.005,
+                "meaningful": 0.0,
+                "love_good_help": 0.0,
+                "wait_measure": 0.0
+              },
+              "margin": 0.675,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.805
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.5,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.25,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.05,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.05,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091501-42e764eb55b9-166446",
+            "20261013T091502-253c754e40ec-24ad9f",
+            "20261013T091502-5baad0521654-510da7",
+            "20261013T091502-9016631f17dd-f42016",
+            "20261013T091503-089743597e24-20556a",
+            "20261013T091503-b09af17d1cd2-a91040"
+          ]
+        },
+        "without_a2": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "action_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "good_care",
+                  "conf": 0.72
+                },
+                "order": {
+                  "pick": "good_care",
+                  "conf": 0.81
+                },
+                "facts": {
+                  "pick": "good_care",
+                  "conf": 0.8
+                },
+                "skeptic": {
+                  "pick": "good_care",
+                  "conf": 0.75
+                },
+                "advocate": {
+                  "pick": "good_care",
+                  "conf": 0.75
+                },
+                "blind": {
+                  "pick": "good_care",
+                  "conf": 0.87
+                }
+              },
+              "panel_pick": "good_care",
+              "majority_pick": "good_care",
+              "consensus": 1.0,
+              "median_probs": {
+                "good_care": 0.81,
+                "talent_desire": 0.185,
+                "meaningful": 0.005,
+                "love_good_help": 0.0,
+                "matters": 0.0,
+                "wait_measure": 0.0
+              },
+              "margin": 0.625,
+              "verdict": "robust",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.775
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.5,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.35,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091503-b4fe6d44cb47-5f8faa",
+            "20261013T091503-b4fe6d44cb47-dd983d",
+            "20261013T091504-8ccb921fe2ca-79e976",
+            "20261013T091504-f1952f2672c3-2905fa",
+            "20261013T091504-e618a4f0f430-863602",
+            "20261013T091504-b504a84adc66-37dca6"
+          ]
+        }
+      },
+      "dependencies": [],
+      "probability_shifts_descriptive_not_significance": [
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "talent_desire",
+          "delta": 0.025
+        },
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "matters",
+          "delta": -0.005
+        },
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "love_good_help",
+          "delta": 0.0
+        },
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "good_care",
+          "delta": -0.025
+        },
+        {
+          "question": "action_wording",
+          "scenario": "without_a2",
+          "option": "meaningful",
+          "delta": 0.005
+        }
+      ],
+      "synthesis": "NO_DETECTED_SCENARIO_FLIP",
+      "interpretation": "Descriptive opinion sensitivity, not independent trials, empirical confidence or permission. Inspect unresolved mirrors and framing even without a scenario flip."
+    }
+  },
+  "timing": {
+    "n": 36,
+    "sum_request_seconds": 10.726263,
+    "median_request_seconds": 0.2758085
+  },
+  "global_model_judgment_requested": false,
+  "authorizes_execution": false,
+  "next": "Agent/owner synthesizes evidence, contradictions and conditional assumptions. Reopen only affected questions after new evidence; do not repeat to obtain agreement."
+}

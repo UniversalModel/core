@@ -1,0 +1,372 @@
+{
+  "schema": "jev-perspectives-result.v1",
+  "decision_id": "umodel-happiness-line1-round3-20261013",
+  "spec_sha256": "3d978920072c89a7b909fdfd71a04b6369604da152c38c142739235f4b1d6bf5",
+  "planned_calls": 18,
+  "completed_calls": 18,
+  "lenses": {
+    "self_concordance": {
+      "pillar": "form",
+      "scenarios": {
+        "baseline": {
+          "scenario_kind": "baseline",
+          "complete": true,
+          "panel": {
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accepting",
+                  "conf": 0.36
+                },
+                "order": {
+                  "pick": "accepting",
+                  "conf": 0.34
+                },
+                "facts": {
+                  "pick": "accepting",
+                  "conf": 0.58
+                },
+                "skeptic": {
+                  "pick": "accepting",
+                  "conf": 0.38
+                },
+                "advocate": {
+                  "pick": "accepting",
+                  "conf": 0.32
+                },
+                "blind": {
+                  "pick": "accepting",
+                  "conf": 0.47
+                }
+              },
+              "panel_pick": "accepting",
+              "majority_pick": "accepting",
+              "consensus": 1.0,
+              "median_probs": {
+                "accepting": 0.475,
+                "yourself_values": 0.215,
+                "true_to_yourself": 0.175,
+                "who_you_are": 0.035,
+                "knowing": 0.01,
+                "wait_measure": 0.01
+              },
+              "margin": 0.26,
+              "verdict": "prevailing",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.37
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 0.9,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.55,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.45,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.35,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.3,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091634-2b24255c32f9-0ee699",
+            "20261013T091634-f7006ff68208-baa91b",
+            "20261013T091635-2279b011eaf7-20f22b",
+            "20261013T091635-030fea66ddff-4f6a40",
+            "20261013T091635-0375dddc8dfa-322c3b",
+            "20261013T091636-0766dd604d60-3590f1"
+          ]
+        },
+        "without_f1": {
+          "scenario_kind": "leave_one_out",
+          "complete": true,
+          "panel": {
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accepting",
+                  "conf": 0.35
+                },
+                "order": {
+                  "pick": "accepting",
+                  "conf": 0.35
+                },
+                "facts": {
+                  "pick": "accepting",
+                  "conf": 0.63
+                },
+                "skeptic": {
+                  "pick": "accepting",
+                  "conf": 0.39
+                },
+                "advocate": {
+                  "pick": "accepting",
+                  "conf": 0.45
+                },
+                "blind": {
+                  "pick": "accepting",
+                  "conf": 0.5
+                }
+              },
+              "panel_pick": "accepting",
+              "majority_pick": "accepting",
+              "consensus": 1.0,
+              "median_probs": {
+                "accepting": 0.515,
+                "yourself_values": 0.225,
+                "true_to_yourself": 0.17,
+                "who_you_are": 0.03,
+                "knowing": 0.01,
+                "wait_measure": 0.01
+              },
+              "margin": 0.29,
+              "verdict": "prevailing",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.42
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 1.15,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.4,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.4,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.25,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091636-a57a2c559305-a3fe02",
+            "20261013T091636-a57a2c559305-d9d62a",
+            "20261013T091636-ce88032b3086-87de55",
+            "20261013T091637-090b380db230-922e3c",
+            "20261013T091637-81fa6ac3d9b6-7847b7",
+            "20261013T091637-1a545f8b2206-b61458"
+          ]
+        },
+        "collectivist": {
+          "scenario_kind": "assumption",
+          "complete": true,
+          "panel": {
+            "self_wording": {
+              "type": "choice",
+              "per_angle": {
+                "base": {
+                  "pick": "accepting",
+                  "conf": 0.28
+                },
+                "order": {
+                  "pick": "accepting",
+                  "conf": 0.24
+                },
+                "facts": {
+                  "pick": "accepting",
+                  "conf": 0.57
+                },
+                "skeptic": {
+                  "pick": "accepting",
+                  "conf": 0.4
+                },
+                "advocate": {
+                  "pick": "accepting",
+                  "conf": 0.26
+                },
+                "blind": {
+                  "pick": "accepting",
+                  "conf": 0.34
+                }
+              },
+              "panel_pick": "accepting",
+              "majority_pick": "accepting",
+              "consensus": 1.0,
+              "median_probs": {
+                "accepting": 0.425,
+                "true_to_yourself": 0.245,
+                "yourself_values": 0.205,
+                "who_you_are": 0.03,
+                "knowing": 0.015,
+                "wait_measure": 0.01
+              },
+              "margin": 0.18,
+              "verdict": "prevailing",
+              "framing_flip": null,
+              "complete_panel": true,
+              "median_confidence": 0.31
+            }
+          },
+          "framing_sensitivity": [
+            {
+              "angle": "facts",
+              "max_shift_in_noise_units": 1.2,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "blind",
+              "max_shift_in_noise_units": 0.8,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "skeptic",
+              "max_shift_in_noise_units": 0.5,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "order",
+              "max_shift_in_noise_units": 0.45,
+              "pick_flips": [],
+              "sensitive": false
+            },
+            {
+              "angle": "advocate",
+              "max_shift_in_noise_units": 0.1,
+              "pick_flips": [],
+              "sensitive": false
+            }
+          ],
+          "call_ids": [
+            "20261013T091638-a16c0da5467b-103863",
+            "20261013T091638-5149548fde8e-88e5db",
+            "20261013T091638-bb6b04de45a5-c53e05",
+            "20261013T091638-bc121fcaa6b3-36a260",
+            "20261013T091639-2a21a02870c9-feff08",
+            "20261013T091639-647ba81f0509-068831"
+          ]
+        }
+      },
+      "dependencies": [],
+      "probability_shifts_descriptive_not_significance": [
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "who_you_are",
+          "delta": -0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "true_to_yourself",
+          "delta": -0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "accepting",
+          "delta": 0.04
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "knowing",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "without_f1",
+          "option": "yourself_values",
+          "delta": 0.01
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "who_you_are",
+          "delta": -0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "true_to_yourself",
+          "delta": 0.07
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "accepting",
+          "delta": -0.05
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "wait_measure",
+          "delta": 0.0
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "knowing",
+          "delta": 0.005
+        },
+        {
+          "question": "self_wording",
+          "scenario": "collectivist",
+          "option": "yourself_values",
+          "delta": -0.01
+        }
+      ],
+      "synthesis": "NO_DETECTED_SCENARIO_FLIP",
+      "interpretation": "Descriptive opinion sensitivity, not independent trials, empirical confidence or permission. Inspect unresolved mirrors and framing even without a scenario flip."
+    }
+  },
+  "timing": {
+    "n": 18,
+    "sum_request_seconds": 5.7183720000000005,
+    "median_request_seconds": 0.284096
+  },
+  "global_model_judgment_requested": false,
+  "authorizes_execution": false,
+  "next": "Agent/owner synthesizes evidence, contradictions and conditional assumptions. Reopen only affected questions after new evidence; do not repeat to obtain agreement."
+}

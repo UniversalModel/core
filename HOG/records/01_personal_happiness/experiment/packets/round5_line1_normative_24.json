@@ -1,0 +1,138 @@
+{
+ "schema": "jev-perspectives.v1",
+ "decision_id": "umodel-happiness-line1-round5-normative-20261013",
+ "call_budget": 24,
+ "lenses": [
+  {
+   "id": "self_concordance",
+   "pillar": "form",
+   "angles": [
+    "base",
+    "order",
+    "facts",
+    "skeptic",
+    "advocate",
+    "blind"
+   ],
+   "brief": {
+    "decision_id": "happiness-form-self-r5-normative-20261013",
+    "objective": "Choose the first line of a public definition of personal happiness intended for universal recognition: it must be accurate to well-being research and consistent with widely shared moral norms.",
+    "decision": "A short public definition of personal happiness, intended for universal public recognition, has three lines. Line 2: 'Having close people and a community that support you.' Line 3: 'Doing what you are good at and care about.' This lens chooses only the wording of line 1. A definition that would describe as happiness a life that harms others may be descriptively possible but is not acceptable for universal public endorsement.",
+    "evidence": [
+     {
+      "id": "F1",
+      "fact": "Self-determination theory: satisfaction of the need for autonomy predicted well-being in each of four countries (Belgium, China, USA, Peru) in a cross-cultural study.",
+      "n": 1051,
+      "source": "published literature (Chen et al. 2015), recalled, not re-verified in this session"
+     },
+     {
+      "id": "F2",
+      "fact": "Ryff's model of psychological well-being has six dimensions; two of them are autonomy and self-acceptance.",
+      "n": 6,
+      "source": "published literature (Ryff 1989), recalled"
+     },
+     {
+      "id": "F3",
+      "fact": "Goals pursued for autonomous, self-concordant reasons were attained more often and produced larger well-being gains in longitudinal student samples.",
+      "n": 3,
+      "source": "published literature (Sheldon and Elliot 1999), recalled; n = number of studies"
+     },
+     {
+      "id": "F4",
+      "fact": "In an experiment, people randomly assigned to spend a small sum on others reported higher happiness that evening than people assigned to spend it on themselves.",
+      "n": 46,
+      "source": "published literature (Dunn, Aknin and Norton 2008), recalled"
+     },
+     {
+      "id": "F5",
+      "fact": "A meta-analysis of kindness interventions found that acts of kindness raise the actor's own well-being by a small-to-moderate amount (about d = 0.28).",
+      "n": 27,
+      "source": "published literature (Curry et al. 2018), recalled; n = number of studies"
+     },
+     {
+      "id": "F6",
+      "fact": "Article 29(2) of the Universal Declaration of Human Rights: everyone's rights and freedoms are subject only to the limitations needed to secure respect for the rights and freedoms of others.",
+      "n": 193,
+      "source": "primary text: UDHR (1948); n = UN member states"
+     },
+     {
+      "id": "F7",
+      "fact": "A reciprocity rule (treat others as you would want to be treated) appears in the ethical teachings of most major religious and philosophical traditions.",
+      "n": 1,
+      "source": "comparative ethics literature, recalled"
+     }
+    ],
+    "mechanism": "Acting from one's own values reduces internal conflict and makes effort self-sustaining, which supports lasting well-being.",
+    "alternatives": [
+     "Being yourself, without harming others.",
+     "Accepting yourself and living by your own values.",
+     "Accepting yourself and living by your values, without harming others.",
+     "Being yourself while respecting the freedom and dignity of others.",
+     "Being yourself and treating others as you want to be treated."
+    ],
+    "constraints": [
+     "The definition must stay at three conditions.",
+     "Wording must be short enough for a public slogan."
+    ],
+    "counterevidence": [
+     {
+      "id": "FC1",
+      "fact": "Self-discrepancy theory: a large gap between the actual self and the ideal self predicts dejection, so striving to be who you want to be can lower well-being when the ideal is out of reach."
+     },
+     {
+      "id": "FC2",
+      "fact": "A twin-study meta-analysis attributes about 32-36% of the variance in well-being to genetic factors, which are not under the person's control."
+     },
+     {
+      "id": "FC3",
+      "fact": "A clause about others makes the line longer and may read as moralising rather than as a description of happiness."
+     },
+     {
+      "id": "FC4",
+      "fact": "'Harm' is not self-defining: competition, honest criticism and self-defence can harm others without being wrong, so a no-harm clause can be read too broadly."
+     }
+    ],
+    "missing": [
+     "Whether readers understand the wording as authenticity or as reaching an ideal self."
+    ],
+    "threshold": "Prefer the candidate that is both accurate to well-being research and acceptable for universal public endorsement under widely shared moral norms; length is not a criterion.",
+    "choices": {
+     "self_wording": {
+      "question": "Which wording of line 1 best meets both requirements: accurate to well-being research and acceptable for universal public endorsement?",
+      "options": {
+       "yourself_no_harm": "Being yourself, without harming others.",
+       "accept_own": "Accepting yourself and living by your own values.",
+       "accept_own_no_harm": "Accepting yourself and living by your values, without harming others.",
+       "dignity": "Being yourself while respecting the freedom and dignity of others.",
+       "reciprocity": "Being yourself and treating others as you want to be treated."
+      }
+     }
+    },
+    "claims": {
+     "must_exclude_harm": "For a definition intended for universal public recognition, the first line must explicitly exclude harm to others."
+    }
+   },
+   "scenarios": [
+    {
+     "id": "without_f6",
+     "kind": "leave_one_out",
+     "evidence_id": "F6"
+    },
+    {
+     "id": "without_f1",
+     "kind": "leave_one_out",
+     "evidence_id": "F1"
+    },
+    {
+     "id": "collectivist",
+     "kind": "assumption",
+     "parameter": "individualism_index_of_society",
+     "baseline": 70,
+     "value": 20,
+     "unit": "Hofstede individualism index (0-100)",
+     "rationale": "Hypothetical collectivist culture; not a new observation."
+    }
+   ]
+  }
+ ]
+}
